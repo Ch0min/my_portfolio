@@ -1,0 +1,133 @@
+header {
+    height: 46vh;
+    padding-top: 7rem;
+}
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.header__text {
+    text-align: left;
+}
+
+.chomin {
+    display: inline-block;
+    transform-origin: center;
+    transition: background-color 0.3s ease;
+}
+
+.chomin:hover {
+    transform-origin: center;
+    animation: bounce 1s linear infinite;
+    color: var(--color-white); /* Replace with the desired hover color */
+    cursor: pointer;
+}
+
+#css__text:hover {
+    animation: bounceDown 1s linear infinite;
+}
+
+.header__container h5 {
+    margin-left: auto;
+    text-align: right;
+}
+
+
+/* ================= CTA (Call to Action) ================= */
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+
+#talk__btn:hover {
+    animation: breathe 1s linear infinite;
+}
+
+#cv__btn:hover {
+    animation: breathe 1s linear infinite;
+}
+
+
+/* ================= HEADER SOCIALS ================= */
+.header__socials {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 6rem;
+    gap: 0.8rem;
+    transform: translateX(-20%);
+}
+
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary-variant);
+    transition: background-color 0.3s ease;
+}
+
+.header__socials:hover::after {
+    animation: rotateAnimation 1s linear infinite;
+    background-color: var(--color-white); /* Replace with the desired hover color */
+}
+
+/*.header__socials::after {*/
+/*content: "";*/
+/*width: 1px;*/
+/*height: 2rem;*/
+/*background: var(--color-primary-variant);*/
+/*transition: height 0.7s ease; !* Update the transition property *!*/
+/*}*/
+
+/*.header__socials:hover::after {*/
+/*    height: 5rem; !* Update the height value to stretch the line *!*/
+/*    background-color: var(--color-white); !* Replace with the desired hover color *!*/
+/*}*/
+
+/* ================= ARROW IN THE MIDDLE ================= */
+.click__this {
+    position: absolute;
+    top: 5.5rem;
+    font-size: 1.5rem;
+    color: var(--color-white);
+
+    animation: bounceDown 1s linear infinite;
+
+}
+
+
+
+/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 38vh;
+    }
+}
+
+/* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+    header {
+        height: 60vh;
+    }
+
+    .cta {
+        margin-top: 1rem;
+    }
+
+    .header__socials, .scroll__down {
+        display: none;
+    }
+
+    .click__this {
+        display: none;
+    }
+}

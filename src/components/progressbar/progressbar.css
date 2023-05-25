@@ -1,0 +1,14 @@
+.progress__main__wrapper {
+    background-color: var(--color-bg);
+    height: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.progress__main__style {
+    height: 5px;
+    background-color: var(--color-primary);
+}
