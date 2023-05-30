@@ -1,0 +1,119 @@
+.projects__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6.25rem 3.125rem;
+}
+
+.projects__container .projects__card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    /*background: white;*/
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 5px var(--color-primary);
+    /*box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);*/
+    transition: 0.5s;
+}
+
+.projects__container .projects__card:hover {
+    transform: translateY(15%);
+}
+
+.projects__container .projects__card .projects__card-img {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #262626;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0 0 5px var(--color-primary);
+
+}
+
+.projects__container .projects__card:hover .projects__card-img {
+    top: -100px;
+    scale: 0.75;
+}
+
+.projects__container .projects__card:hover .projects__card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects__container .projects__card .projects__card-content {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    top: 252px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.projects__container .projects__card:hover .projects__card-content {
+    height: 220px;
+    top: 6.5rem;
+}
+
+
+.projects__container .projects__card .projects__card-content h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-primary-variant);
+}
+
+.projects__container .projects__card .projects__card-content h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-primary-variant);
+}
+
+.projects__container .projects__card .projects__card-content p {
+    font-size: 0.9rem;
+    color: var(--color-light);
+}
+
+/* New styles for aligning the headings to the left of each <a> tag */
+.projects__container .projects__card .projects__card-content .projects__card-links {
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.projects__container .projects__card .projects__card-content .projects__card-links h5 {
+    margin-right: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-primary-variant);
+}
+
+.projects__container .projects__card .projects__card-content .projects__card-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--color-white);
+    background: var(--color-primary);
+    margin: 0 0.5rem;
+    font-size: 1.8rem;
+    border-radius: 25%;
+}
+
+.projects__container .projects__card .projects__card-content .projects__card-links a:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+}

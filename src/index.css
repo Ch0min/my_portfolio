@@ -30,7 +30,17 @@ html {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    display: block;
+    background: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-white);
 }
 
 body {

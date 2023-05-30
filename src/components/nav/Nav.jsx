@@ -16,6 +16,7 @@ function Nav() {
     return (
         <div>
             <nav className="nav__glass__main">
+
                 <ul>
                     <li><a href="#" onClick={() => setActiveNav("#")}
                            className={activeNav === "#" ? "active" : ""}>Hjem</a></li>
@@ -29,7 +30,7 @@ function Nav() {
                            className={activeNav === "#projects" ? "active" : ""}>Projekter</a></li>
                     <li><a href="#contact" onClick={() => setActiveNav("#contact")}
                            className={activeNav === "#contact" ? "active" : ""}>Kontakt</a></li>
-                    <div id="nav__ender" ></div>
+                    <div id="nav__ender"></div>
                 </ul>
             </nav>
             <NavMobile/>
