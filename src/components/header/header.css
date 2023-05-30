@@ -1,5 +1,6 @@
 header {
-    height: 46vh;
+    height: 50vh;
+    /*height: 70vh;*/
     padding-top: 7rem;
 }
 
@@ -15,21 +16,11 @@ header {
     text-align: left;
 }
 
-.chomin {
-    display: inline-block;
-    transform-origin: center;
-    transition: background-color 0.3s ease;
-}
+.header__container h1 {
+    margin: 0 auto;
+    line-height: 1.2;
+    font-size: 3rem;
 
-.chomin:hover {
-    transform-origin: center;
-    animation: bounce 1s linear infinite;
-    color: var(--color-white); /* Replace with the desired hover color */
-    cursor: pointer;
-}
-
-#css__text:hover {
-    animation: bounceDown 1s linear infinite;
 }
 
 .header__container h5 {
@@ -38,17 +29,95 @@ header {
 }
 
 
+/* ================= CS STUDENT TEXT ================= */
+#cs__student-text .cs__student-text-hover {
+    display: inline-block;
+}
+
+.cs__student-text-hover:hover {
+    animation: bounceDown 1s linear infinite;
+}
+
+
+/* ================= QUESTION TOOLTIP & CHOMIN ================= */
+#header__tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+#header__tooltip__text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    border-radius: 7px;
+    transform: translateX(-15%);
+    color: var(--color-light);
+    background: var(--color-bg);
+    white-space: nowrap;
+    font-size: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#header__tooltip__text::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-100%);
+    border: 15px solid;
+    border-color: var(--color-bg) #0000 #0000 #0000;
+}
+
+#header__tooltip:hover #header__tooltip__text {
+    top: -100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+#header__chomin {
+    position: relative;
+    display: inline-block;
+}
+
+#header__chomin::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-white);
+    transition: width 1s ease;
+}
+
+.border-text-animation #header__chomin::after {
+    width: 100%;
+}
+
+#header__chomin:hover::after {
+    background-color: var(--color-primary);
+}
+
+
 /* ================= CTA (Call to Action) ================= */
 .cta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top: 1.7rem;
     gap: 1rem;
+}
+
+#talk__btn {
+    /*color: var(--color-white);*/
 }
 
 #talk__btn:hover {
     animation: breathe 1s linear infinite;
+    color: var(--color-bg);
 }
 
 #cv__btn:hover {
@@ -70,46 +139,80 @@ header {
 .header__socials::after {
     content: "";
     width: 1px;
-    height: 2rem;
+    height: 1.5rem;
     background: var(--color-primary-variant);
     transition: background-color 0.3s ease;
 }
 
 .header__socials:hover::after {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background: transparent url(../../assets/shuriken.png) no-repeat;
+    background-size: contain;
     animation: rotateAnimation 1s linear infinite;
-    background-color: var(--color-white); /* Replace with the desired hover color */
 }
-
-/*.header__socials::after {*/
-/*content: "";*/
-/*width: 1px;*/
-/*height: 2rem;*/
-/*background: var(--color-primary-variant);*/
-/*transition: height 0.7s ease; !* Update the transition property *!*/
-/*}*/
-
-/*.header__socials:hover::after {*/
-/*    height: 5rem; !* Update the height value to stretch the line *!*/
-/*    background-color: var(--color-white); !* Replace with the desired hover color *!*/
-/*}*/
 
 /* ================= ARROW IN THE MIDDLE ================= */
 .click__this {
     position: absolute;
-    top: 5.5rem;
+    top: 5.7rem;
     font-size: 1.5rem;
     color: var(--color-white);
 
     animation: bounceDown 1s linear infinite;
-
 }
+
+
+/*!* ================= LETTER ONE BY ONE ANIMATION ================= *!*/
+/*.random-animation span {*/
+/*    opacity: 0;*/
+/*}*/
+
+/*@keyframes random-fade-in {*/
+/*    from {*/
+/*        opacity: 0;*/
+/*        transform: translate(-50%, -50%) scale(0);*/
+/*    }*/
+/*    to {*/
+/*        opacity: 1;*/
+/*        transform: translate(-50%, -50%) scale(1);*/
+/*    }*/
+/*}*/
+
+/*.random-animation span {*/
+/*    !*position: relative;*!*/
+/*    animation: random-fade-in .5s ease-in-out forwards;*/
+/*}*/
+
+/*.random-animation span::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 1px;*/
+/*    height: 0;*/
+/*    background-color: #000;*/
+/*    left: 50%;*/
+/*    top: 100%;*/
+/*    transform-origin: top;*/
+/*    animation: random-appear 0.3s ease-in-out forwards;*/
+/*    animation-delay: 0.5s;*/
+/*}*/
+
+/*@keyframes random-appear {*/
+/*    from {*/
+/*        transform: scaleY(0);*/
+/*    }*/
+/*    to {*/
+/*        transform: scaleY(1);*/
+/*    }*/
+/*}*/
 
 
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
     header {
-        height: 38vh;
+        height: 32vh;
     }
 }
 

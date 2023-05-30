@@ -1,34 +1,333 @@
 .about__container {
     display: grid;
-    grid-template-columns: 30% 60%;
-    gap: 10%
+    grid-template-columns: 25rem 1fr;
+    grid-auto-rows: minmax(0, 1fr); /* Added to prevent stretching of rows */
+    gap: 5%;
 }
 
-.about__me {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(
-            45deg,
-            transparent,
-            var(--color-primary),
-            transparent
-    );
-    display: grid;
-    place-items: center;
+
+/* ================= ABOUT ME & IMAGE ================= */
+.about__me-frame {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 15px var(--color-primary-variant);
+}
+
+.about__me-frame::before {
+    content: "";
+    position: absolute;
+    inset: -0.625rem 8.75rem;
+    background: linear-gradient(315deg, var(--color-primary), #ff9683);
+    transition: .5s;
+    animation: imageFrameAnimation 4s linear infinite;
+    box-shadow: 0 0 15px var(--color-primary),
+    0 0 30px #ffb7aa,
+    0 0 45px var(--color-primary),
+    0 0 60px #ffb7aa;
+}
+
+.about__me-frame:hover::before {
+    inset: -1.2rem;
+}
+
+.about__me-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0.4rem;
+    background: #282727;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .about__me-image {
-    border-radius: 2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    inset: 2rem;
+    border: 6px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 3;
     overflow: hidden;
-    transform: rotate(10deg);
+}
+
+.about__me-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+    /*display: none; !* shuriken edit *!*/
+
+}
+
+.about__me-frame:hover .about__me-image img {
+    opacity: 0;
+}
+
+.about__me-image h2 {
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-white);
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+.about__me-image h2 span {
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+/*.about__me-image a {*/
+/*    position: relative;*/
+/*    margin-top: 3rem;*/
+/*    padding: 0.6rem 1.4rem;*/
+/*    background: var(--color-primary-variant);*/
+/*    color: var(--color-light);*/
+/*    border-radius: 1.5rem;*/
+/*    font-weight: 500;*/
+/*    font-size: 0.8rem;*/
+/*    text-transform: uppercase;*/
+/*    letter-spacing: 0.05rem;*/
+/*    transition: 0.1s;*/
+/*}*/
+
+.about__me-image a {
+    margin-top: 4rem;
+}
+
+.about__me-image a:hover {
+    letter-spacing: 0.2rem;
+}
+
+
+/* ================= HIDDEN SHURIKEN IN IMAGE ================= */
+.about__me-image-shuriken {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.about__me-image-shuriken::before {
+    content: "";
+    top: 0;
+    width: 7rem;
+    height: 7rem;
+    background: transparent url(../../assets/shuriken.png) no-repeat;
+    background-size: contain;
+    animation: rotateAnimation 1s linear infinite;
+}
+
+.about__me-image-shuriken:hover::after {
+    content: "En shuriken?";
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    color: var(--color-light);
+    background: var(--color-bg);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.about__me-image-shuriken::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    border: 10px solid;
+    border-color: var(--color-bg) transparent transparent transparent;
+}
+
+.about__me-image-shuriken:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+}
+
+.about__me-image h1 {
+    position: absolute;
+    top: 8rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-light);
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.about__me-image:hover h1 {
+    transform: translateX(-110px);
+    opacity: 1;
+}
+
+.shake__animation {
+    animation: shakeAnimation 0.1s linear infinite;
+}
+
+
+/* ================= ABOUT DETAILS ================= */
+.about__details {
+    grid-column: 1; /* Place the new div in the first column */
+    grid-row: 2; /* Place the new div in the second row */
+}
+
+.about__details-card {
+    position: relative;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 5px var(--color-primary);
     transition: var(--transition);
+    overflow: hidden;
+    margin-top: 1rem;
 }
 
-.about__me-image:hover {
-    transform: rotate(0);
+.about__details-card:hover {
+    background: var(--color-primary);
+    cursor: default;
+    border: transparent;
+    box-shadow: none;
 }
 
+.about__details .about__details-card:hover::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.about__details .about__details-card h1 {
+    position: absolute;
+    top: 4rem;
+    right: 20px;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-light);
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.about__details-card h2 {
+    color: var(--color-primary-variant);
+}
+
+.about__details-card:hover h2 {
+    color: var(--color-white);
+}
+
+.about__details .about__details-card:hover h1 {
+    transform: translateY(-70px);
+    opacity: 1;
+}
+
+.about__details .about__details-card span {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.about__details .about__details-card:hover span {
+    opacity: 1;
+}
+
+.about__details-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.about__details-card .about__details-icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+}
+
+.about__details-card:hover .about__details-icon {
+    color: var(--color-white);
+}
+
+.about__details-card img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.about__details-card small {
+    display: flex;
+    align-items: center;
+}
+
+.about__details-card small img {
+    margin-right: 0.5rem;
+}
+
+.about__details .about__details-card span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--color-light));
+    animation: animateTopLine 2s linear infinite;
+}
+
+
+.about__details .about__details-card span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--color-light));
+    animation: animateRightLine 2s linear infinite;
+    animation-delay: 1s;
+}
+
+
+.about__details .about__details-card span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, var(--color-light));
+    animation: animateBottomLine 2s linear infinite;
+}
+
+
+.about__details .about__details-card span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--color-light));
+    animation: animateLeftLine 2s linear infinite;
+    animation-delay: 1s;
+}
+
+
+/* ================= ABOUT CARDS ================= */
+.about__content {
+    grid-column: 2; /* Place the content in the second column */
+    grid-row: 1 / span 2; /* Span the content over two rows */
+    gap: 1.5rem;
+}
 
 .about__cards {
     display: grid;
@@ -37,141 +336,232 @@
 }
 
 .about__card {
-    background: rgba(0, 0, 0, 0.20);
-    border: 1px solid var(--color-primary);
-    /*border-radius: 1rem;*/
-    padding: 1.5rem;
-    /*text-align: center;*/
-    transition: var(--transition);
-    /*border: 2px solid transparent; !* Set your desired border style *!*/
     position: relative;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 5px var(--color-primary);
+    transition: var(--transition);
+    overflow: hidden;
 }
 
 .about__card:hover {
     background: var(--color-primary);
     cursor: default;
+    border: transparent;
+    box-shadow: none;
+}
 
+.about__cards .about__card:hover::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.about__cards .about__card h1 {
+    position: absolute;
+    top: 6.5rem;
+    right: 20px;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-light);
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.about__cards .about__card:hover h1 {
+    transform: translateY(-85px);
+    opacity: 1;
 }
 
 .about__card:hover small {
     color: var(--color-light);
-
 }
 
-.about__card:hover::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 2px solid #dca897;
-    border-right: 2px solid #dca897;
-
-    animation: border-top-right 3s infinite alternate;
-}
-
-.about__card:hover::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 2px solid #dca897;
-    border-left: 2px solid #dca897;
-
-    animation: border-bottom-left 3s infinite alternate;
-}
-
-.edu__icon {
+.about__card-icon {
+    width: 2rem;
+    height: 2rem;
     color: var(--color-primary);
     font-size: 1.4rem;
-    /*margin-right: 0.5rem;*/
 }
 
-.work__icon {
-    color: var(--color-primary);
-    font-size: 1.4rem;
+.about__hobbies-icon {
+    width: 2rem;
+    height: 2rem;
     margin-right: 0.5rem;
-}
-
-.hobbies__icon {
     color: var(--color-primary);
     font-size: 2rem;
-    margin-right: 0.5rem;
 }
 
-.about__card h2 {
-    color: var(--color-primary-variant);
+.about__card:hover .about__card-icon {
+    color: var(--color-white);
 }
 
-.about__card:hover h2 {
+.about__card:hover .about__hobbies-icon {
     color: var(--color-white);
 }
 
 
+.about__card h2 {
+    color: var(--color-primary-variant);
+    word-wrap: break-word;
+}
+
 .about__card h4 {
     margin: 1rem auto 0;
     text-align: left;
-    /*color: var(--color-primary);*/
-}
-
-.about__card:hover h4 {
-    color: var(--color-light);
+    word-wrap: break-word;
 }
 
 .about__card small {
     display: flex;
     font-size: 0.7rem;
     padding-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+.about__cards .about__card span {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.about__cards .about__card:hover span {
+    opacity: 1;
+}
+
+.about__cards .about__card span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--color-light));
+    animation: animateTopLine 2s linear infinite;
+}
+
+.about__cards .about__card span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--color-light));
+    animation: animateRightLine 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.about__cards .about__card span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, var(--color-light));
+    animation: animateBottomLine 2s linear infinite;
+}
+
+.about__cards .about__card span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--color-light));
+    animation: animateLeftLine 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.about__card:hover h2 {
+    color: var(--color-white);
+}
+
+.about__card:hover h4 {
+    color: var(--color-light);
 }
 
 .about__card:hover small {
     color: var(--color-white);
 }
 
+.about__card__cv__text {
+    color: var(--color-white);
+}
+
+.about__card__cv__text:hover {
+    color: var(--color-light);
+    cursor: pointer;
+}
+
 .about__content p {
+    padding-bottom: 2rem;
     margin: 0.2rem 0 1.5rem;
     color: var(--color-light);
+    flex-wrap: wrap;
 }
 
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
     .about__container {
+        display: grid;
         grid-template-columns: 1fr;
-        gap: 0;
+        grid-template-rows: auto auto auto;
+        gap: 2rem;
+        padding-top: 1rem;
     }
 
-    .about__me {
-        width: 50%;
-        margin: 2rem auto 4rem;
+    .about__me-frame {
+        grid-column: 1;
+        grid-row: 1;
+        margin: auto;
+
     }
 
-    .about__content p {
-        margin: 1rem 0 1.5rem;
-    }
-}
-
-/* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
-    .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
-
-    .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+    .about__new-div {
+        grid-column: 1;
+        grid-row: 2;
     }
 
     .about__content {
-        text-align: center;
-    }
-
-    .about__content p {
-        margin: 1.5rem 0;
+        grid-column: 1;
+        grid-row: 3;
     }
 }
 
+
+/* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+    .about__container {
+        display: block;
+    }
+
+    .about__details {
+        margin-bottom: 2rem;
+    }
+
+    .about__me-frame,
+    .about__details,
+    .about__content,
+    .about__cards {
+        width: 100%;
+    }
+
+    .about__me-frame, .about__new-div {
+        margin-bottom: 2rem;
+    }
+
+    .about__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about__cards small {
+        font-size: 16px;
+    }
+}

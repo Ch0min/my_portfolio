@@ -1,0 +1,248 @@
+/* ================= SLIDE ANIMATIONS ================= */
+.animate-fade {
+    opacity: 0;
+    transition: opacity 4s ease;
+}
+
+.animate-slide-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2.5s ease, transform 1s ease;
+}
+
+.animate-slide-left-slow {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 3s ease, transform 2s ease;
+}
+
+.animate-slide-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 2s ease, transform 1s ease;
+}
+
+.animate-slide-right-slow {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease 0s, transform 1s ease 0s;
+}
+
+.animate-slide-up-mid {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 2s ease 1s, transform 2s ease 1s;
+}
+
+.animate-slide-up-slow {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 3s ease 2s, transform 2s ease 2s;
+}
+
+.animate-slide-down {
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: opacity 1s ease 1s, transform 1s ease 1s;
+}
+
+.show .animate-fade {
+    opacity: 1;
+}
+
+.show .animate-slide-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.show .animate-slide-left-slow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.show .animate-slide-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.show .animate-slide-right-slow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.show .animate-slide-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.show .animate-slide-up-mid {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.show .animate-slide-up-slow {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.show .animate-slide-down {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= KEYFRAME ANIMATIONS ================= */
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 70%, 100% {
+        transform: translateY(0);
+    }
+
+    35% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes bounceDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes imageFrameAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animateTopLine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animateRightLine {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animateBottomLine {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animateLeftLine {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 62.5rem;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}
+
+@keyframes animateWave2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 62.5rem;
+    }
+}
+
+@keyframes shakeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+    20% {
+        transform: translateX(5px) rotate(5deg);
+    }
+    30% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+    40% {
+        transform: translateX(5px) rotate(5deg);
+    }
+    50% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+    60% {
+        transform: translateX(5px) rotate(5deg);
+    }
+    70% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+    80% {
+        transform: translateX(5px) rotate(5deg);
+    }
+    90% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes wavyAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,9 +1,5 @@
 import React from "react";
-import {BsGithub} from "react-icons/bs"
-import {BsLinkedin} from "react-icons/bs"
-import {BsInstagram} from "react-icons/bs"
-import {BsFacebook} from "react-icons/bs"
-
+import { BsGithub, BsLinkedin, BsInstagram, BsFacebook } from "react-icons/bs"
 function HeaderSocials() {
     return (
         <div className="header__socials animate-slide-left">
