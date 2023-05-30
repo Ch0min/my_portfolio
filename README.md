@@ -33,3 +33,5 @@ TODO:
 REFACTORING;
 - skift alle px til rem
 - skift alle transition til var(--transition)
+
+-
