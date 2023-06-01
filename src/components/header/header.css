@@ -1,6 +1,6 @@
 header {
     height: 50vh;
-    /*height: 70vh;*/
+    /*height: 30vh;*/
     padding-top: 7rem;
 }
 
@@ -210,16 +210,16 @@ header {
 
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px){
     header {
-        height: 32vh;
+        height: 70vh;
     }
 }
 
 /* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
     header {
-        height: 60vh;
+        height: 58vh;
     }
 
     .cta {

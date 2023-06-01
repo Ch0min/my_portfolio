@@ -22,12 +22,11 @@ function Header() {
         <header>
             <div className="container header__container">
                 <div className={`header__text ${showAnimation ? "show" : ""}`}>
-                    <h4 className="text-basic animate-slide-left">Halløjsa, navnet er</h4>
+                    <h4 className="text-basic animate-slide-left">Halløjsa, mit navn er</h4>
                     <h1 className={`animate-slide-left-slow ${showBorderAnimation ? "border-text-animation" :  ""}`} onTransitionEnd={handleTransitionEnd}>
                         Mark{" "}
                         <div id="header__tooltip">
                             <span id="header__tooltip__text">Klik for historien bag mit kaldenavn</span>
-
                             <a href="" id="header__chomin">Chomin</a>
                         </div>
                         {" "}Lundgaard
@@ -46,9 +45,10 @@ function Header() {
             </div>
 
 
-
-
-
+            {/*<div className="blogcards__container">*/}
+            {/*    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet aspernatur aut consequatur cum dolor, dolorum ex magni, nesciunt odio officia optio quasi quia tempora, voluptas. Asperiores aspernatur dolore eligendi esse exercitationem incidunt, odit unde. Et fugit illum voluptate! Animi, at blanditiis consectetur corporis cumque dolore dolorem ducimus eaque eius eveniet ex excepturi exercitationem hic iste, itaque iure laudantium magnam molestiae nam non officiis perspiciatis quae quia quidem quisquam repudiandae, rerum saepe ullam vel velit veritatis voluptas voluptate voluptates. Amet corporis cumque cupiditate deleniti distinctio est illum minus molestias, mollitia, odit placeat quos repellat repudiandae soluta ullam. Enim, odit, optio!</p>*/}
+            {/*    /!* Other content within the container *!/*/}
+            {/*</div>*/}
 
         </header>
     );

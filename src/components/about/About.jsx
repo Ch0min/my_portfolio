@@ -24,8 +24,8 @@ function About() {
 
     return (
         <section id="about">
-                <h5>Bliv lidt klogere på</h5>
-                <h2><i>HVEM JEG ER</i></h2>
+                <h5><i>Bliv lidt klogere på</i></h5>
+                <h2>HVEM JEG ER</h2>
             <div className={isShaking ? "shake__animation" : ""}>
                 <div className="container about__container">
 

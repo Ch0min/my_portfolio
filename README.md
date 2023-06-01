@@ -8,30 +8,27 @@
 
 TODO TODAY:
 - Change nav mobile
-- Lav Blogs i header og direct til ny side til blog.
+- Lav BlogCards i header og direct til ny side til blog.
+- Fix BlogCards i header, giv dem nogenlunde samme design som cards i About.
+- Måske lav forskellige transitions mellem baggrunde af nogle komponenter. Eller section skildring
 
 
 
 TODO:
-    About me page -> make icons in Education, Work and Hobbies a different color on hover.
-    Skills = Skillset
-    Make animation or gif in the bottom of header?
     Progress bar on 25% make a take me to Top button?
     Figure out where to put Letter Animation
-    Side eller komponent for sjove facts - fx når man klikker på Chomin i headeren, at man ryger derover.
-    When you click on the Shuriken on headerSocials you can mouseHold and throw away
     Hent CV for mere info under Work About, kan man ikk trykke på nogle gange.
-    Make wave transition
-    Fix frame and about me image on mobile devices.
+    Fix at når man refresher, så flasher Hjem knappen i navbaren før den scroller op.
 
     About componment make a Grow button, which makes my picture change from older to older.
 
 - LAVE GIFS TIL HEADER OG ANDRE til BLOG
-- Make an about page with deeper descripion of who you are
+- Make an about page with deeper description of who you are
 - Lave 7 fun facts omkring mig på siden, som man selv kan finde.
 
 REFACTORING;
-- skift alle px til rem
+- Juster og finpuds media screens.
+- skift alle px til rem undtaget font-sizes
 - skift alle transition til var(--transition)
 
 

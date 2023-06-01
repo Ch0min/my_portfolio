@@ -75,10 +75,10 @@ section {
 section > h2, section > h5 {
     text-align: center;
     color: var(--color-light);
-    /*text-align: center;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*width: 55%;*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
 }
 
 section > h2 {

@@ -8,6 +8,7 @@ function CTA(props) {
             <p className="animate-slide-up-mid">ELLER</p>
             <a href={CV} download id="cv__btn" className="btn animate-slide-up-slow">Klik her for at hente mit CV</a>
         </div>
+
     );
 }
 
