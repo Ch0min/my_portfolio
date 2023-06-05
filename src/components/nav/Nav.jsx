@@ -1,5 +1,7 @@
 import React, {useEffect} from "react";
 import {useState} from "react";
+import {NavLink} from "react-router-dom";
+
 import "./nav.css"
 
 import NavMobile from "./NavMobile";
@@ -56,16 +58,18 @@ function Nav() {
     return (
         <div>
             <nav className="nav__glass__main">
+                <ul>
+                    <li><NavLink to="/blogs" className="nav__blogs"><span>BLOG</span></NavLink></li>
+                    <div id="nav__ender"></div>
 
+                </ul>
                 <ul>
                     <li><a href="#" onClick={() => setActiveNav("#")}
                            className={activeNav === "#" ? "active" : ""}>Hjem</a></li>
                     <li><a href="#about" onClick={() => setActiveNav("#about")}
                            className={activeNav === "#about" ? "active" : ""}>Om mig</a></li>
-                    <li><a href="#blogs" onClick={() => setActiveNav("#blogs")}
-                           className={activeNav === "#experience" ? "active" : ""}>Blog</a></li>
                     <li><a href="#experience" onClick={() => setActiveNav("#experience")}
-                           className={activeNav === "#skills" ? "active" : ""}>Erfaring</a></li>
+                           className={activeNav === "#experience" ? "active" : ""}>Erfaring</a></li>
                     <li><a href="#projects" onClick={() => setActiveNav("#projects")}
                            className={activeNav === "#projects" ? "active" : ""}>Projekter</a></li>
                     <li><a href="#contact" onClick={() => setActiveNav("#contact")}

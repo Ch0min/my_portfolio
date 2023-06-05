@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import "./about.css"
 
 import ME from "../../assets/me1.jpg"
@@ -22,13 +22,13 @@ function About() {
         }, 1000)
     }
 
+
     return (
         <section id="about">
                 <h5><i>Bliv lidt klogere på</i></h5>
                 <h2>HVEM JEG ER</h2>
             <div className={isShaking ? "shake__animation" : ""}>
                 <div className="container about__container">
-
                     <div className="about__me-frame">
                         <div className="about__me-image">
                             <img src={ME} alt="Et Billede af Mig"/>
@@ -71,25 +71,39 @@ function About() {
                     {/*END OF DETAILS*/}
 
 
-                    <div className="about__content">
-                        <h2>Såå hvem er jeg?</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Corporis cumque esse perspiciatis qui repellat temporibus.
-                            Cupiditate esse eveniet ipsum laudantium libero maiores saepe veniam voluptatem.
-                            Aliquid culpa ipsa numquam reprehenderit.Cupiditate esse eveniet ipsum laudantium libero
-                            maiores
-                            saepe veniam voluptatem.
-                            Aliquid culpa ipsa numquam reprehenderit.Cupiditate esse eveniet ipsum laudantium libero
-                            maiores
-                            saepe veniam voluptatem.
-                            Aliquid culpa ipsa numquam reprehenderit. saepe veniam voluptatem.
-                            Aliquid culpa ipsa numquam reprehenderit.Cupiditate esse eveniet ipsum laudantium libero
-                            maiores
-                            saepe veniam voluptatem.
-                            Aliquid culpa ipsa numquam reprehenderit.
-                        </p>
 
+                    {/*<div*/}
+                    {/*    className="about__me-image-shuriken"*/}
+                    {/*    onClick={spawnShurikens}*/}
+                    {/*    ref={shurikenRef}*/}
+                    {/*>*/}
+                    {/*    <h1>Shuriken</h1>*/}
+                    {/*</div>*/}
+
+
+
+
+                    <div className="about__content">
+                        <h2>En lille bitte smule om mig...</h2>
+                        <i><h4 className="about__content-header">Hejsa derude, mit navn er Mark Lundgaard og jeg er en Datamatiker studerende, som går på CPHBusiness. <br/>
+                            og JEG ELSKER AT UDVIKLE OG DESIGNE KODE!
+                        </h4></i>
+                        <h5 className="about__content-text">
+                            Jeg har det seneste år fået en interesse i, at opbygge og designe hjemmesider i React JS, og jeg elsker hvert sekund af det.
+                            Man kan roligt sige, at der hvor jeg har lagt en del timer samt blod, sved og tårer er i mit Portfolio hobby projekt,
+                            hvilket har givet mig ekstra ny viden og læring til bagagen indenfor især HTML/CSS og React JS.
+                            <br/><br/>
+                            Når jeg ikke er limet til min computer, så siger jeg sjældent nej tak til en kold bajer med vennerne, ellers så nyder jeg tiden med familien.
+                            <br/>
+                            Hvis jeg skulle beskrive mig selv kort, så kender mine nære mig som kreativ, passioneret, udadvendt og nysgerrig af natur med et stort gå på mod til,
+                            at lære noget nyt.
+                            <br/><br/>
+                            Som sagt, så ønsker jeg at finde en praktikplads til efteråret 2023, som enten Frontend eller Full-stack udvikler.
+                            Når det så er sagt, så er Backend udvikler ikke helt udelukket, så jeg er stadig åbent for det hele, hvis den helt rette arbejdsplads tilbyder.
+                            <br/><br/>
+                            Det var vidst nok om mig, jeg håber vi ses derude en dag, ellers så <a href="#contact">lad os tage en snak!</a>
+
+                        </h5>
                         <div className="about__cards">
                             <article className="about__card">
                                 <span></span>

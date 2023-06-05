@@ -73,8 +73,7 @@ function Contact() {
                             </div>
                         </div>
                         <h2 className="contact__socials-text">
-                            <div className="contact__socials-shuriken">
-                            </div>
+                            <div className="contact__socials-shuriken"></div>
                             Find mig her
                         </h2>
                         <ul className="contact__socials-list">

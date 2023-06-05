@@ -14,7 +14,7 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
     --color-bg: #1f1f20;
-    --color-bg-variant: #303030;
+    --color-bg-variant: #6e6a6a;
     --color-primary: #f06b4f;
     --color-primary-variant: rgb(253, 134, 110);
 
@@ -49,6 +49,7 @@ body {
     background: #000;
     color: var(--color-white);
     background-image: url(../src/assets/shattered-dark.png);
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 
 }
 
@@ -135,8 +136,13 @@ img {
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
     .container {
         width: var(--container-width-md);
+
     }
 
     section {
@@ -152,6 +158,10 @@ img {
 
 /* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
     .container {
         width: var(--container-width-sm);
     }

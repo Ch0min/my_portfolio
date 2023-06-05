@@ -27,8 +27,8 @@
     position: absolute;
     top: 1.25rem;
     width: 17.75rem;
-    height: 13.75rem;
-    background: #262626;
+    height: 13.25rem;
+    background: transparent;
     border-radius: 12px;
     transition: 0.5s;
     overflow: hidden;

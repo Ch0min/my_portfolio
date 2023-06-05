@@ -4,9 +4,20 @@
     grid-auto-rows: minmax(0, 1fr);
     gap: 5%;
     flex-wrap: wrap;
-
 }
 
+.about__content-header {
+    font-weight: 600;
+    color: var(--color-primary-variant);
+}
+
+.about__content-text {
+    margin: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--color-light);
+    line-height: 2rem;
+}
 
 /* ================= ABOUT ME & IMAGE ================= */
 .about__me-frame {
@@ -168,6 +179,34 @@
 .shake__animation {
     animation: shakeAnimation 0.1s linear infinite;
 }
+
+
+
+.shuriken {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    background: transparent url(../../assets/shuriken.png) no-repeat;
+    background-size: contain;
+    animation: spawnAnimation 1s linear;
+    pointer-events: none;
+
+
+}
+
+@keyframes spawnAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+
+
 
 
 /* ================= ABOUT DETAILS ================= */
@@ -412,11 +451,13 @@
 
 .about__card small {
     display: flex;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding-bottom: 1rem;
     word-wrap: break-word;
 }
 
+
+/*** ON HOVER ANIMATIONS ***/
 .about__cards .about__card span {
     transition: 0.5s;
     opacity: 0;
@@ -498,6 +539,12 @@
 
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1280px) {
+    .about__cards {
+        gap: 1rem;
+    }
+}
+
 @media screen and (max-width: 1124px) {
     .about__container {
         display: grid;

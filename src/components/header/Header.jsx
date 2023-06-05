@@ -31,7 +31,7 @@ function Header() {
                         </div>
                         {" "}Lundgaard
                     </h1>
-                    <h5 id="cs__student-text" className="text-basic animate-fade">
+                    <h5 id="cs__student-text" className="text-basic animate-fade-slow">
                         <span className="cs__student-text-hover">
                         <a href=""
                            target="_blank">

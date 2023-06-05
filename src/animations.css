@@ -4,11 +4,23 @@
     transition: opacity 4s ease;
 }
 
+.animate-fade-slow {
+    opacity: 0;
+    transition: opacity 6s ease-in;
+}
+
 .animate-slide-left {
     opacity: 0;
     transform: translateX(-100%);
     transition: opacity 2.5s ease, transform 1s ease;
 }
+
+.animate-slide-left-med {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2.5s ease, transform 1.5s ease;
+}
+
 
 .animate-slide-left-slow {
     opacity: 0;
@@ -56,7 +68,16 @@
     opacity: 1;
 }
 
+.show .animate-fade-slow {
+    opacity: 1;
+}
+
 .show .animate-slide-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.show .animate-slide-left-med {
     opacity: 1;
     transform: translateX(0);
 }
@@ -244,5 +265,83 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes pointToRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(7px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animateBlogcardsLine {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+@keyframes animateBlogcardsLineShadow {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+@keyframes animateBlogcardsLineMac {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 70%;
+    }
+}
+
+@keyframes animateBlogcardsLineShadowMac {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 70%;
+    }
+}
+
+@keyframes animateBlogcardsLineIpad {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 90%;
+    }
+}
+
+@keyframes animateBlogcardsLineShadowIpad {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 90%;
     }
 }

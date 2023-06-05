@@ -1,5 +1,5 @@
 header {
-    height: 50vh;
+    height: 34vh;
     /*height: 30vh;*/
     padding-top: 7rem;
 }
@@ -210,24 +210,72 @@ header {
 
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1440px) {
     header {
-        height: 70vh;
+        height: 48vh;
     }
 }
 
+@media screen and (max-width: 1180px) {
+    header {
+        height: 34vh;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    header {
+        height: 34vh;
+    }
+}
+
+@media screen and (max-width: 896px){
+    header {
+        /*height: 46vh;*/
+        height: 34vh;
+    }
+}
+
+
 /* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 668px){
+    header {
+        height: 68vh;
+    }
+
+    .header__container h1 {
+        font-size: 2.7rem;
+    }
+
+
+    .scroll__down {
+        display: none;
+    }
+
+    .header__socials {
+        top: 6rem;
+    }
+
+    .click__this {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     header {
-        height: 58vh;
+        height: 36vh;
     }
 
     .cta {
         margin-top: 1rem;
     }
 
-    .header__socials, .scroll__down {
+    .scroll__down {
         display: none;
+    }
+
+    .header__socials {
+        top: 10rem;
     }
 
     .click__this {

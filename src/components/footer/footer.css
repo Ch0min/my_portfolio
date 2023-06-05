@@ -28,7 +28,7 @@ footer .footer__socials-list li a {
     display: inline-block;
     width: 2.3rem;
     height: 2.3rem;
-    background: var(--color-bg-variant);
+    background: var(--color-bg);
 
     display: grid;
     justify-content: center;
@@ -50,7 +50,7 @@ footer .footer__menu-list li a {
     margin: 0 0.6rem;
     font-size: 1.1rem;
     font-weight: 400;
-    color: var(--color-bg-variant);
+    color: var(--color-bg);
     transition: 0.5s;
 }
 
@@ -63,7 +63,7 @@ footer p {
     margin-top: 0.9rem;
     margin-bottom: 0.6rem;
     text-align: center;
-    color: var(--color-bg-variant);
+    color: var(--color-bg);
     font-size: 0.8rem;
 }
 

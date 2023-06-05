@@ -4,7 +4,7 @@ import "./projects.css"
 import PORTFOLIO from "../../assets/portfoliowebsite.png"
 import FITNESS from "../../assets/fitness.png"
 import GAME from "../../assets/gamedev.png"
-import CUPCAKE from "../../assets/cupcake3.png"
+import CUPCAKE from "../../assets/cupcake.png"
 import CARPORT from "../../assets/carport.png"
 import {BsGithub} from "react-icons/bs";
 import {BsBook} from "react-icons/bs";
@@ -64,8 +64,8 @@ function Projects() {
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/game_dev_eksamen" target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
-                            <a href="#"><BsBook/></a>
-                            <h5>Blog</h5>
+                            {/*<a href="#"><BsBook/></a>*/}
+                            {/*<h5>Blog</h5>*/}
                         </div>
                     </div>
                 </div>
@@ -81,8 +81,8 @@ function Projects() {
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/carport" target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
-                            <a href="#"><BsBook/></a>
-                            <h5>Blog</h5>
+                            {/*<a href="#"><BsBook/></a>*/}
+                            {/*<h5>Blog</h5>*/}
                         </div>
                     </div>
                 </div>

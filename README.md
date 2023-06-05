@@ -7,11 +7,12 @@
 7. Footer
 
 TODO TODAY:
+- LAV ANIMATIONS TIL BLOGCARDS
+- Muligvis skaler blogcards på header
+- Lav blogs side færdig, samt en blog page.
 - Change nav mobile
-- Lav BlogCards i header og direct til ny side til blog.
-- Fix BlogCards i header, giv dem nogenlunde samme design som cards i About.
 - Måske lav forskellige transitions mellem baggrunde af nogle komponenter. Eller section skildring
-
+- Fix media screens på Blogs siden, liggende telefoner
 
 
 TODO:
@@ -19,6 +20,8 @@ TODO:
     Figure out where to put Letter Animation
     Hent CV for mere info under Work About, kan man ikk trykke på nogle gange.
     Fix at når man refresher, så flasher Hjem knappen i navbaren før den scroller op.
+    LAV 404 side
+    LAv mobile Blogs Navknap
 
     About componment make a Grow button, which makes my picture change from older to older.
 
@@ -27,9 +30,11 @@ TODO:
 - Lave 7 fun facts omkring mig på siden, som man selv kan finde.
 
 REFACTORING;
+- FIX NAVBAR NÅR MAN TRYKKER PÅ DEN AT TABS LYSER FORKERT OP
 - Juster og finpuds media screens.
 - skift alle px til rem undtaget font-sizes
 - skift alle transition til var(--transition)
+- fix media screen med blogcards når man vender iphone horizontalt.
 
 
 
@@ -65,7 +70,7 @@ Dette giver mig også et bedre overblik at arbejde i, hvis ens struktur er pænt
 STRUKTUR:
 1. Jeg startede så småt ud med, at lave mapper til de features jeg gerne ville implementere under min components src folder.
 2. Derefter tilføjet jeg en jsx fil samt dens tilhørende css fil til mappen. På den måde, vidste jeg hvad mit fundament ville være.
-3. Nav, Header, About, Experience, Skills, Projects, Contact og Footer.
+3. NavBlogs, Header, About, Experience, Skills, Projects, Contact og Footer.
 4. Nu hvor jeg havde mit fundament, så vidste jeg at hvis jeg fik en ny fed idé til et komponent, så vidste jeg hvor jeg skulle tilføje det.
 5. På den måde, så fik jeg et ekstremt godt overblik over mine komponenter og tilhørende filer.
 
@@ -97,7 +102,7 @@ WORKFLOW:
    Til min navbar på mobilen, ville jeg lave noget andet end en simpel burgermenu, så dermed valgte jeg lavet et lille nyt design.
 4. 
 
-
+-- blog / rapport skrivning skrives løbende færdigt...
 
 
 

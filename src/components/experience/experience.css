@@ -21,6 +21,8 @@
 
 .experience__container .experience__card:hover {
     transform: translateY(-20px);
+    animation: breathe 1.5s linear infinite;
+
 }
 
 .experience__container .experience__card .experience__card-img {
