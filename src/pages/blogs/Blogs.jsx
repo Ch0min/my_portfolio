@@ -5,8 +5,8 @@ import "./blogs.css";
 import ProgressBar from "../../components/progressbar/ProgressBar";
 import Footer from "../../components/footer/Footer";
 
-
-import PORTFOLIO from "../../assets/portfoliowebsite2.png"
+import PORTFOLIO1 from "../../assets/portfoliowebsite.png"
+import PORTFOLIO2 from "../../assets/portfoliowebsite2.png"
 import FITNESS from "../../assets/fitness.png"
 import GAME from "../../assets/gamedev.png"
 
@@ -25,7 +25,7 @@ function Blogs() {
                     <div className="blogs__left-col">
                         <div className="blogs__card-left">
 
-                            <img src={PORTFOLIO} alt="Min portfolio hjemmeside Project"/>
+                            <img src={PORTFOLIO2} alt="Min portfolio hjemmeside Project"/>
 
                             <div className="blogs__card-left-content">
                                 <h6>Nyeste opslag</h6>
@@ -87,7 +87,7 @@ function Blogs() {
 
                 <div className="blogs__card-bottom">
                     <div className="blogs__card-bottom-img">
-                        <img src={PORTFOLIO} alt="Portfolio Projekt Blog"/>
+                        <img src={PORTFOLIO1} alt="Portfolio Projekt Blog"/>
                     </div>
                     <div className="blogs__card-bottom-content">
                         <h6>React JS</h6>
