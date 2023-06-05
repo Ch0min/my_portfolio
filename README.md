@@ -21,8 +21,8 @@ TODO:
     Hent CV for mere info under Work About, kan man ikk trykke på nogle gange.
     Fix at når man refresher, så flasher Hjem knappen i navbaren før den scroller op.
     LAV 404 side
-    LAv mobile Blogs Navknap
-
+    LAV mobile Blogs Navknap
+    skifte PNG og jpeg images til svg?
     About componment make a Grow button, which makes my picture change from older to older.
 
 - LAVE GIFS TIL HEADER OG ANDRE til BLOG

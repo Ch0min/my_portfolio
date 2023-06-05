@@ -6,12 +6,9 @@ import ProgressBar from "../../components/progressbar/ProgressBar";
 import Footer from "../../components/footer/Footer";
 
 
-import PORTFOLIO from "../../assets/portfoliowebsite.png"
+import PORTFOLIO from "../../assets/portfoliowebsite2.png"
 import FITNESS from "../../assets/fitness.png"
 import GAME from "../../assets/gamedev.png"
-import CUPCAKE from "../../assets/cupcake.png"
-import CARPORT from "../../assets/carport.png"
-import {BsChevronRight} from "react-icons/bs";
 
 function Blogs() {
     return (
@@ -59,6 +56,10 @@ function Blogs() {
                                 <li>
                                     <a href=""><span>Praktikplads Efteråret 2023</span></a>
                                     <p href="">Jeg skal skrive mit afsluttende Datamatikerprojekt efter min praktikplads til efteråret 2023.</p>
+                                </li>
+                                <li>
+                                    <a href=""><span>Python Eksamens Web-Scraping / AI Projekt</span></a>
+                                    <p href="">En rapport af vores arbejdsproces.</p>
                                 </li>
                                 <li>
                                     <a href=""><span>Udvikling af et Kollegiums hjemmeside</span></a>

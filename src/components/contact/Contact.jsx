@@ -109,7 +109,7 @@ function Contact() {
 
                             <div className="contact__form-input-box">
                                 <input type="text" name="subject" required/>
-                                <span>Subject*</span>
+                                <span>Emne*</span>
                             </div>
 
                             <div className="contact__form-input-box">
