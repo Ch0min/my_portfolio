@@ -1,6 +1,6 @@
 BLOG: MIN PORTFOLIO WEBSITE SKREVET I REACTJS FRA SCRATCH.
 
-Jeg begyndte med, at udvikle min egen portfolio hjemmeside, da jeg skulle til at finde en praktikplads som Datamatiker.
+Jeg begyndte med, at udvikle min egen responsive portfolio hjemmeside, da jeg skulle til at finde en praktikplads som Datamatiker.
 Grunden til dette var, at jeg gerne ville prøve kræfter med den viden jeg har lært fra Datamatiker studiet, samt lære og udvikle mig
 endnu mere inden for specielt ReactJS, da dette var et framework jeg faldt med begge ben ned i eftersom vi lærte det
 i 3. semester. Efter at have udviklet mine 3. semesters eksamensprojekter, samt et demo projekt af en kollegiehjemmeside steg min
