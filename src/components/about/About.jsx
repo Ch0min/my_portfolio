@@ -90,8 +90,8 @@ function About() {
                         </h4></i>
                         <h5 className="about__content-text">
                             Jeg har det seneste år fået en interesse i, at opbygge og designe hjemmesider i React JS, og jeg elsker hvert sekund af det.
-                            Man kan roligt sige, at der hvor jeg har lagt en del timer samt blod, sved og tårer er i mit Portfolio hobby projekt,
-                            hvilket har givet mig ekstra ny viden og læring til bagagen indenfor især HTML/CSS og React JS.
+                            Man kan roligt sige at der, hvor jeg har lagt en del timer samt blod, sved og tårer, er i mit Portfolio hobby projekt,
+                            hvilket har givet mig endnu mere ny viden og læring til bagagen, indenfor HTML/CSS og React JS.
                             <br/><br/>
                             Når jeg ikke er limet til min computer, så siger jeg sjældent nej tak til en kold bajer med vennerne, ellers så nyder jeg tiden med familien.
                             <br/>

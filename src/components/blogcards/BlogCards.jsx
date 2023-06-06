@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {NavLink} from "react-router-dom";
 import "./blogcards.css"
 
 import PORTFOLIO from "../../assets/portfoliowebsite.png"
@@ -9,15 +10,10 @@ import {BsChevronRight} from "react-icons/bs"
 
 function BlogCards() {
     const [showAnimation, setShowAnimation] = useState(false)
-    const [showBorderAnimation, setShowBorderAnimation] = useState(false)
 
     useEffect(() => {
         setShowAnimation(true)
     }, []);
-
-    const handleTransitionEnd = () => {
-        setShowBorderAnimation(true)
-    }
 
     return (
         <section id="blogcards">
@@ -25,11 +21,11 @@ function BlogCards() {
             <div className={`container blogcards__container ${showAnimation ? "show" : ""}`}>
 
                 <div className="blogcards__side-text animate-slide-up-mid">
-                    <a href="/blogs"><div className="blogcards__vertical-text">
+                    <NavLink to="/blogs"><div className="blogcards__vertical-text">
                         Mine seneste blogs
-                    </div></a>
+                    </div></NavLink>
                 </div>
-                <a href="/blogs"><BsChevronRight className="blogcards__vertical-icon animate-fade-slow"/></a>
+                <NavLink to="/blogs"><BsChevronRight className="blogcards__vertical-icon animate-fade-slow"/></NavLink>
 
 
                 <div className="blogcards__box animate-slide-left-slow">

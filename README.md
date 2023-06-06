@@ -7,8 +7,7 @@
 7. Footer
 
 TODO TODAY:
-- LAV ANIMATIONS TIL BLOGCARDS
-- Muligvis skaler blogcards på header
+- Fix nav mobile
 - Lav blogs side færdig, samt en blog page.
 - Change nav mobile
 - Måske lav forskellige transitions mellem baggrunde af nogle komponenter. Eller section skildring

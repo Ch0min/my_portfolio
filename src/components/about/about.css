@@ -206,9 +206,6 @@
 }
 
 
-
-
-
 /* ================= ABOUT DETAILS ================= */
 .about__details {
     grid-column: 1; /* Place the new div in the first column */
@@ -539,9 +536,13 @@
 
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1480px) {
     .about__cards {
         gap: 1rem;
+    }
+
+    .about__details {
+        transform: translateY(-200px);
     }
 }
 
@@ -552,6 +553,10 @@
         grid-template-rows: auto auto auto;
         gap: 2rem;
         padding-top: 1rem;
+    }
+
+    .about__details {
+        transform: translateY(0);
     }
 
     .about__me-frame {
