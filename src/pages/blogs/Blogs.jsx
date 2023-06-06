@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import "./blogs.css";
 
@@ -11,6 +11,11 @@ import FITNESS from "../../assets/fitness.png"
 import CUPCAKE from "../../assets/cupcake.png"
 
 function Blogs() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
 
     return (
         <section id="blogs">
@@ -34,49 +39,76 @@ function Blogs() {
                                 <h6>Nyeste opslag</h6>
                                 <h2><span>Mit Portfolio Projekt</span></h2>
                                 <h4>opslået d. 7. dec. 2023</h4>
-                                <p>Jeg begyndte med, at udvikle min egen portfolio hjemmeside, da jeg skulle til at finde en praktikplads som Datamatiker.
-                                    Grunden til dette var, at jeg gerne ville prøve kræfter med den viden jeg har lært fra Datamatiker studiet, samt lære og udvikle mig
-                                    endnu mere inden for specielt React JS, da dette var et framework jeg faldt med begge ben ned i, eftersom vi lærte det
+                                <p>Jeg begyndte med, at udvikle min egen portfolio hjemmeside, da jeg skulle til at
+                                    finde en praktikplads som Datamatiker.
+                                    Grunden til dette var, at jeg gerne ville prøve kræfter med den viden jeg har lært
+                                    fra Datamatiker studiet, samt lære og udvikle mig
+                                    endnu mere inden for specielt React JS, da dette var et framework jeg faldt med
+                                    begge ben ned i, eftersom vi lærte det
                                     i 3. semester.
                                 </p>
                                 <div className="blogs__card-left-content-expand">
                                     <p>
-                                        <p>Efter at have udviklet mine 3. semesters eksamensprojekter, samt et demo projekt af en kollegiehjemmeside steg min
-                                        interesse endnu mere for React frameworket. Mit mål med at lave en portfolio hjemmeside er ikke bare blot at vise mine kompetencer, men
-                                        mere for at udvikle mig endnu mere, og prøve at lære en masse nye sjove ting inden for React JS verdenen.</p>
+                                        <p>Efter at have udviklet mine 3. semesters eksamensprojekter, samt et demo
+                                            projekt af en kollegiehjemmeside steg min
+                                            interesse endnu mere for React frameworket. Mit mål med at lave en portfolio
+                                            hjemmeside er ikke bare blot at vise mine kompetencer, men
+                                            mere for at udvikle mig endnu mere, og prøve at lære en masse nye sjove ting
+                                            inden for React JS verdenen.</p>
 
-                                        <p>Jeg har taget inspiration fra en masse forskellige portfolio projekter og fundet en masse hjælp og ny viden inden for React JS,
-                                        hvilket har hjulpet mig med kreativiteten, samt er min HTML og især CSS viden og kodeskrivning også blevet endnu mere rustet.
-                                        Jeg har ikke været bange for, at rive mig ud i noget helt nyt eller give nogle features mit helt eget lille twist, som jeg
-                                        så derefter kunne tilføje og implementere til mit projekt, hvis det passede ind.</p>
+                                        <p>Jeg har taget inspiration fra en masse forskellige portfolio projekter og
+                                            fundet en masse hjælp og ny viden inden for React JS,
+                                            hvilket har hjulpet mig med kreativiteten, samt er min HTML og især CSS
+                                            viden og kodeskrivning også blevet endnu mere rustet.
+                                            Jeg har ikke været bange for, at rive mig ud i noget helt nyt eller give
+                                            nogle features mit helt eget lille twist, som jeg
+                                            så derefter kunne tilføje og implementere til mit projekt, hvis det passede
+                                            ind.</p>
                                         <br/>
 
-                                        <h5>Jeg vil dermed gerne hive jer delvist med ind i min thought-process i gennem mit portfolio projekt.</h5>
+                                        <h5>Jeg vil dermed gerne hive jer delvist med ind i min thought-process i gennem
+                                            mit portfolio projekt.</h5>
 
-                                        <p>For det første startede jeg ud med, at tænke "hvad skal en portfolio hjemmeside indeholde for en studerende som mig?".
-                                        Jeg prøvet rekognoscere end masse forskellige portfolio hjemmeside fra andre personer, samt kigge på en håndfuld guides
-                                        på youtube eller andre diverse medier. Dette gav mig en bred forståelse for, hvilke features og komponenter der
-                                        ville være fede at implementere i min egen portfolio hjemmeside herunder ville jeg gerne gøre den mere interaktiv og sjov, da det er klart federe end en statisk hjemmeside.
-                                        <br/>Derefter gik jeg til værks!</p>
+                                        <p>For det første startede jeg ud med, at tænke "hvad skal en portfolio
+                                            hjemmeside indeholde for en studerende som mig?".
+                                            Jeg prøvet rekognoscere end masse forskellige portfolio hjemmeside fra andre
+                                            personer, samt kigge på en håndfuld guides
+                                            på youtube eller andre diverse medier. Dette gav mig en bred forståelse for,
+                                            hvilke features og komponenter der
+                                            ville være fede at implementere i min egen portfolio hjemmeside herunder
+                                            ville jeg gerne gøre den mere interaktiv og sjov, da det er klart federe end
+                                            en statisk hjemmeside.
+                                            <br/>Derefter gik jeg til værks!</p>
                                         <br/>
 
                                         <h5>
-                                        Jeg startede ud med, at opbygge projektets struktur, da jeg elsker at ens opbygning og refactoring er optimalt hele vejen igennem.
-                                        Det giver mig også et bedre overblik i arbejdsmiljøet, når ens struktur er pænt sat op fra start af.</h5>
+                                            Jeg startede ud med, at opbygge projektets struktur, da jeg elsker at ens
+                                            opbygning og refactoring er optimalt hele vejen igennem.
+                                            Det giver mig også et bedre overblik i arbejdsmiljøet, når ens struktur er
+                                            pænt sat op fra start af.</h5>
 
 
                                         <p><b>STRUKTUR:</b></p>
                                         <ul>
-                                            <li><p>1. &nbsp;Jeg startede så småt ud med, at lave folders til de features jeg gerne ville implementere under min components src folder.</p></li>
-                                            <li><p>2. &nbsp;Derefter tilføjet jeg en jsx fil samt en tilhørende css fil til folderen. På den måde, vidste jeg hvad mit fundament ville være.</p></li>
-                                            <li><p>3. &nbsp;Nu hvor jeg havde opbygget et fundament, så vidste jeg at det ville blive nemmere, at implementere nye komponenter,
+                                            <li><p>1. &nbsp;Jeg startede så småt ud med, at lave folders til de features
+                                                jeg gerne ville implementere under min components src folder.</p></li>
+                                            <li><p>2. &nbsp;Derefter tilføjet jeg en jsx fil samt en tilhørende css fil
+                                                til folderen. På den måde, vidste jeg hvad mit fundament ville være.</p>
+                                            </li>
+                                            <li><p>3. &nbsp;Nu hvor jeg havde opbygget et fundament, så vidste jeg at
+                                                det ville blive nemmere, at implementere nye komponenter,
                                                 hvis kreativiteten brød løs.</p></li>
-                                            <li><p>4. &nbsp;Ved at opbygge en struktur fra start af, så fik jeg et ekstremt
-                                                stabilt overblik over mine komponenter og filer helt fra start af.</p></li>
+                                            <li><p>4. &nbsp;Ved at opbygge en struktur fra start af, så fik jeg et
+                                                ekstremt
+                                                stabilt overblik over mine komponenter og filer helt fra start af.</p>
+                                            </li>
                                         </ul>
                                         <br/>
-                                        <h5>Under hele mit workflow valgte jeg, at droppe et Kanban board, da det var et personligt solo projekt.
-                                            Jeg valgte dermed i stedet for, at skrive alle nye implementeringer ned i et dokument, samt skrive TODOs og nye idéer som jeg fik løbende ned i README filen.</h5>
+                                        <h5>Under hele mit workflow valgte jeg, at droppe et Kanban board, da det var et
+                                            personligt solo projekt.
+                                            Jeg valgte dermed i stedet for, at skrive alle nye implementeringer ned i et
+                                            dokument, samt skrive TODOs og nye idéer som jeg fik løbende ned i README
+                                            filen.</h5>
 
                                         <p><b>WORKFLOW LISTE</b></p>
                                         <ul>
@@ -94,63 +126,78 @@ function Blogs() {
                                         <br/>
 
                                         <p><b>WORKFLOWET</b></p>
-                                        <p>(Jeg lavet Media Screens til stort set alle Komponenter - Mindre skærme og mobilskærme løbende.)
+                                        <p>(Jeg lavet Media Screens til stort set alle Komponenter - Mindre skærme og
+                                            mobilskærme løbende.)
                                         </p>
                                         <ul>
                                             <li><p>1. &nbsp;
                                                 Jeg startede ud med, at lave en index.css fil,
-                                                som ville indeholde de "globale variabler" og css kodestruktur for mit HTML.
+                                                som ville indeholde de "globale variabler" og css kodestruktur for mit
+                                                HTML.
                                             </p></li>
                                             <li><p>2. &nbsp;
-                                                Dernæst begyndte jeg at udvikle min Header. Designet legede jeg lidt med, og til sidst faldt alle brikkerne på plads.
-                                                Jeg synes selv jeg fik lavet en fed header, som ville fungere som en præsentation for min hjemmeside.
+                                                Dernæst begyndte jeg at udvikle min Header. Designet legede jeg lidt
+                                                med, og til sidst faldt alle brikkerne på plads.
+                                                Jeg synes selv jeg fik lavet en fed header, som ville fungere som en
+                                                præsentation for min hjemmeside.
                                                 <br/>
-                                                Jeg begyndte dermed, at arbejde med animations i css, både ren css animations og keyframes.
+                                                Jeg begyndte dermed, at arbejde med animations i css, både ren css
+                                                animations og keyframes.
                                                 <br/>
                                                 Dette var en helt ny boldgade for mig,
-                                                men synes egentlig det var meget sjovt, så derfor fik min Header en masse hyggelige animations.
+                                                men synes egentlig det var meget sjovt, så derfor fik min Header en
+                                                masse hyggelige animations.
                                                 <br/>
-                                                Jeg synes ikke rigtigt, at min Header og fremtidige animations ville passe ind i de tilhørende CSS filer, så derfor valgte jeg lave en separat animations.css fil.
+                                                Jeg synes ikke rigtigt, at min Header og fremtidige animations ville
+                                                passe ind i de tilhørende CSS filer, så derfor valgte jeg lave en
+                                                separat animations.css fil.
                                             </p></li>
                                             <li><p>3. &nbsp;
-                                                Efter min Header begyndte jeg, at udvikle min Navbar, som skulle være fixed/sticky til skærmen.
+                                                Efter min Header begyndte jeg, at udvikle min Navbar, som skulle være
+                                                fixed/sticky til skærmen.
                                                 <br/>
-                                                Dette var noget helt nyt for mig, da jeg altid har lavet en traditionel Navbar i min Header, som altid var i toppen af siden og ikke fulgte med en hvis man scrolled.
-                                                Denne ide synes jeg var den helt rette for min hjemmeside, da jeg gerne ville prøve på noget utraditionelt.
+                                                Dette var noget helt nyt for mig, da jeg altid har lavet en traditionel
+                                                Navbar i min Header, som altid var i toppen af siden og ikke fulgte med
+                                                en hvis man scrolled.
+                                                Denne ide synes jeg var den helt rette for min hjemmeside, da jeg gerne
+                                                ville prøve på noget utraditionelt.
                                                 <br/>
-                                                Til min Navbar på mobilen ville jeg lave noget andet end en simpel burgermenu, så dermed valgte jeg at lave et lille nyt design, som passer med min main Navbar.
+                                                Til min Navbar på mobilen ville jeg lave noget andet end en simpel
+                                                burgermenu, så dermed valgte jeg at lave et lille nyt design, som passer
+                                                med min main Navbar.
 
                                             </p></li>
                                             <li><p>4. &nbsp;
                                                 Fortsættes...
 
-                                            {/*</p></li>*/}
-                                            {/*<li><p>5. &nbsp;*/}
+                                                {/*</p></li>*/}
+                                                {/*<li><p>5. &nbsp;*/}
 
 
-                                            {/*</p></li>*/}
-                                            {/*<li><p>6. &nbsp;*/}
+                                                {/*</p></li>*/}
+                                                {/*<li><p>6. &nbsp;*/}
 
 
-                                            {/*</p></li>*/}
-                                            {/*<li><p>7. &nbsp;*/}
+                                                {/*</p></li>*/}
+                                                {/*<li><p>7. &nbsp;*/}
 
 
-                                            {/*</p></li>*/}
-                                            {/*<li><p>8. &nbsp;*/}
+                                                {/*</p></li>*/}
+                                                {/*<li><p>8. &nbsp;*/}
 
 
-                                            {/*</p></li>*/}
-                                            {/*<li><p>9. &nbsp;*/}
+                                                {/*</p></li>*/}
+                                                {/*<li><p>9. &nbsp;*/}
 
 
-                                            {/*</p></li>*/}
-                                            {/*<li><p>10. &nbsp;*/}
+                                                {/*</p></li>*/}
+                                                {/*<li><p>10. &nbsp;*/}
 
                                             </p></li>
                                         </ul>
                                         <br/>
-                                        <h5>Bloggen er ikke skrevet helt færdigt endnu, da Portfolio hjemmesiden stadig mangler nogle små justeringer og features.</h5>
+                                        <h5>Bloggen er ikke skrevet helt færdigt endnu, da Portfolio hjemmesiden stadig
+                                            mangler nogle små justeringer og features.</h5>
                                         <br/>
                                         <b>MEDIA SCREENS</b>
                                         <ul>
@@ -184,7 +231,8 @@ function Blogs() {
                                 </li>
                                 <li>
                                     <a href=""><span>Praktikplads Efteråret 2023</span></a>
-                                    <p href="">Jeg skal skrive mit afsluttende Datamatikerprojekt efter min praktikplads til efteråret 2023.</p>
+                                    <p href="">Jeg skal skrive mit afsluttende Datamatikerprojekt efter min praktikplads
+                                        til efteråret 2023.</p>
                                 </li>
                                 <li>
                                     <a href=""><span>Python Eksamens Web-Scraping / AI Projekt</span></a>
