@@ -18,6 +18,7 @@ import Footer from "./components/footer/Footer";
 
 import NavBlogs from "./components/navblogs/NavBlogs";
 import Blogs from "./pages/blogs/Blogs";
+import BlogArticle from "./pages/blogarticle/BlogArticle";
 
 
 function App() {
@@ -33,12 +34,13 @@ function App() {
             <NavBlogs onClick={handleNavClick} />
             <Routes>
                 <Route path="/blogs" element={<Blogs />}/>
+                <Route path="/blogarticle" element={<BlogArticle />}/>
             </Routes>
 
 
 
 
-            {location.pathname === "/blogs" ? null : (
+            {["/blogs", "/blogarticle"].includes(location.pathname) ? null : (
                 <>
                     <ProgressBar/>
                     <Nav/>

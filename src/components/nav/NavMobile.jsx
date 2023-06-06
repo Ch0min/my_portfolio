@@ -1,13 +1,10 @@
-import React, {useEffect} from "react";
-import { useState } from "react";
+import React, {useState, useEffect} from "react";
+import {NavLink} from "react-router-dom";
+
 import "./nav.css"
 
+import {BsBook, BsPerson, BsClipboardCheck, BsCodeSlash, BsChatText} from "react-icons/bs";
 import {AiOutlineHome} from "react-icons/ai"
-import {BsFilePerson} from "react-icons/bs"
-import {BiBook} from "react-icons/bi"
-import {RiContactsLine} from "react-icons/ri"
-import {AiOutlineFundProjectionScreen} from "react-icons/ai"
-import {BiMessageDetail} from "react-icons/bi"
 
 function Nav() {
     const [activeNav, setActiveNav] = useState("#")
@@ -16,28 +13,29 @@ function Nav() {
         window.location.hash = '#';
     }, []);
 
-    const handleClick = () => {
-        setActiveNav(!activeNav)
-    }
+    // const handleClick = () => {
+    //     setActiveNav(!activeNav)
+    // }
 
     return (
-        <div className="nav__mobile">
-            <div className={`nav__mobile-toggle ${activeNav ? "active" : ""}`} onClick={handleClick}><i></i></div>
-                <div className="nav__mobile-menu">
-                    <ul>
-                        <li style={{"--i": "0.1s"}}><a href="#"><AiOutlineHome/></a></li>
-                        <li style={{"--i": "0.2s"}}><a href="#about"><BsFilePerson/></a></li>
-                        <li></li>
-                        <li style={{"--i": "0.2s"}}><a href="#experience"><BiBook/></a></li>
-                        <li style={{"--i": "0.1s"}}><a href="#"><AiOutlineFundProjectionScreen/></a></li>
-
-                    </ul>
-                </div>
-
-
-
-
-
+        <nav className="nav__mobile">
+            <ul>
+                <li><NavLink to="/blogs" className="nav__blogs-mobile"><span><BsBook/></span></NavLink></li>
+                <div id="nav__ender"></div>
+            </ul>
+            <ul>
+                <li className="nav__link"><a href="#" onClick={() => setActiveNav("#")}
+                                             className={activeNav === "#" ? "active" : ""}><AiOutlineHome/></a></li>
+                <li className="nav__link"><a href="#about" onClick={() => setActiveNav("#about")}
+                                             className={activeNav === "#about" ? "active" : ""}><BsPerson/></a></li>
+                <li className="nav__link"><a href="#experience" onClick={() => setActiveNav("#experience")}
+                                             className={activeNav === "#experience" ? "active" : ""}><BsCodeSlash/></a></li>
+                <li className="nav__link"><a href="#projects" onClick={() => setActiveNav("#projects")}
+                                             className={activeNav === "#projects" ? "active" : ""}><BsClipboardCheck/></a></li>
+                <li className="nav__link"><a href="#contact" onClick={() => setActiveNav("#contact")}
+                                             className={activeNav === "#contact" ? "active" : ""}><BsChatText/></a></li>
+                <div id="nav__ender"></div>
+            </ul>
 
 
             {/*<a href="#" onClick={() => setActiveNav("#")}*/}
@@ -62,7 +60,7 @@ function Nav() {
 
             {/*{window.innerWidth <= 600 ? "Test" : "Contact"}*/}
 
-        </div>
+        </nav>
 
     );
 }

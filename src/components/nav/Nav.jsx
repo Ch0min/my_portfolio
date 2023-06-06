@@ -59,20 +59,19 @@ function Nav() {
         <div>
             <nav className="nav__glass__main">
                 <ul>
-                    <li><NavLink to="/blogs" className="nav__blogs"><span>BLOG</span></NavLink></li>
+                    <li><NavLink to="/blogs" className="nav__blogs"><span>Blog</span></NavLink></li>
                     <div id="nav__ender"></div>
-
                 </ul>
                 <ul>
-                    <li><a href="#" onClick={() => setActiveNav("#")}
+                    <li className="nav__link"><a href="#" onClick={() => setActiveNav("#")}
                            className={activeNav === "#" ? "active" : ""}>Hjem</a></li>
-                    <li><a href="#about" onClick={() => setActiveNav("#about")}
+                    <li className="nav__link"><a href="#about" onClick={() => setActiveNav("#about")}
                            className={activeNav === "#about" ? "active" : ""}>Om mig</a></li>
-                    <li><a href="#experience" onClick={() => setActiveNav("#experience")}
+                    <li className="nav__link"><a href="#experience" onClick={() => setActiveNav("#experience")}
                            className={activeNav === "#experience" ? "active" : ""}>Erfaring</a></li>
-                    <li><a href="#projects" onClick={() => setActiveNav("#projects")}
+                    <li className="nav__link"><a href="#projects" onClick={() => setActiveNav("#projects")}
                            className={activeNav === "#projects" ? "active" : ""}>Projekter</a></li>
-                    <li><a href="#contact" onClick={() => setActiveNav("#contact")}
+                    <li className="nav__link"><a href="#contact" onClick={() => setActiveNav("#contact")}
                            className={activeNav === "#contact" ? "active" : ""}>Kontakt</a></li>
                     <div id="nav__ender"></div>
                 </ul>
