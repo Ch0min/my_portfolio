@@ -90,7 +90,7 @@ Fix at når man refresher, så flasher Hjem knappen i navbaren før den scroller
 LAV 404 side
 skifte PNG og jpeg images til svg?
 animations på blogs side?
-
+mangler historien bag mit navn chomin
 
 
 
