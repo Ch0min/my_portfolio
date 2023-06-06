@@ -3,6 +3,7 @@ import "./header.css"
 
 import HeaderSocials from "./HeaderSocials";
 import CTA from "./CTA"
+
 import {FiChevronsDown} from "react-icons/fi";
 
 
@@ -43,20 +44,8 @@ function Header() {
                     <p className="animate-slide-down"><FiChevronsDown/></p>
                 </div>
             </div>
-
-
-            {/*<div className="blogcards__container">*/}
-            {/*    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet aspernatur aut consequatur cum dolor, dolorum ex magni, nesciunt odio officia optio quasi quia tempora, voluptas. Asperiores aspernatur dolore eligendi esse exercitationem incidunt, odit unde. Et fugit illum voluptate! Animi, at blanditiis consectetur corporis cumque dolore dolorem ducimus eaque eius eveniet ex excepturi exercitationem hic iste, itaque iure laudantium magnam molestiae nam non officiis perspiciatis quae quia quidem quisquam repudiandae, rerum saepe ullam vel velit veritatis voluptas voluptate voluptates. Amet corporis cumque cupiditate deleniti distinctio est illum minus molestias, mollitia, odit placeat quos repellat repudiandae soluta ullam. Enim, odit, optio!</p>*/}
-            {/*    /!* Other content within the container *!/*/}
-            {/*</div>*/}
-
         </header>
     );
 }
 
 export default Header;
-
-
-{/*<a href="https://github.com/Ch0min/" target="_blank"><i*/}
-{/*    className="chomin text-basic">"Chomin"</i>*/}
-{/*</a>*/}

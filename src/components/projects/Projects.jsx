@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 import "./projects.css"
 
 import PORTFOLIO from "../../assets/portfoliowebsite.png"
@@ -7,6 +8,7 @@ import GAME from "../../assets/gamedev.png"
 import FITNESS from "../../assets/fitness.png"
 import CUPCAKE from "../../assets/cupcake.png"
 import CARPORT from "../../assets/carport.png"
+
 import {BsGithub} from "react-icons/bs";
 import {BsBook} from "react-icons/bs";
 
@@ -31,8 +33,8 @@ function Projects() {
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/my_portfolio" target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
-                            <a href="#"><BsBook/></a>
-                            <h5>Læs mere</h5>
+                            <NavLink to="/blogs"><BsBook/></NavLink>
+                            <h5>Blog</h5>
                         </div>
                     </div>
                 </div>
@@ -47,8 +49,6 @@ function Projects() {
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/python_exam" target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
-                            {/*<a href="#"><BsBook/></a>*/}
-                            {/*<h5>Blog</h5>*/}
                         </div>
                     </div>
                 </div>
@@ -63,8 +63,6 @@ function Projects() {
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/game_dev_eksamen" target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
-                            {/*<a href="#"><BsBook/></a>*/}
-                            {/*<h5>Blog</h5>*/}
                         </div>
                     </div>
                 </div>
@@ -81,7 +79,7 @@ function Projects() {
                             <a href="https://github.com/Christoffer-Nielsen-Cph/3sem_exam_backend"
                                target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
-                            <a href="#"><BsBook/></a>
+                            <NavLink to="/blogs"><BsBook/></NavLink>
                             <h5>Blog</h5>
                         </div>
                     </div>
@@ -98,8 +96,6 @@ function Projects() {
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/carport" target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
-                            {/*<a href="#"><BsBook/></a>*/}
-                            {/*<h5>Blog</h5>*/}
                         </div>
                     </div>
                 </div>
@@ -114,7 +110,7 @@ function Projects() {
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/cupcake" target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
-                            <a href="#"><BsBook/></a>
+                            <NavLink to="/blogs"><BsBook/></NavLink>
                             <h5>Blog</h5>
                         </div>
                     </div>

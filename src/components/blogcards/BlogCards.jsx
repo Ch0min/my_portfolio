@@ -39,10 +39,10 @@ function BlogCards() {
                     </div>
                     <div className="blogcards__content">
                         <h5>d. 25. maj. 2023</h5>
-                        <a href="#" className="blogcards__title">Processen af min Portfolio website</a>
+                        <NavLink to="/blogs" className="blogcards__title">Processen af min Portfolio website</NavLink>
                         <p>Jeg begyndte med, at udvikle min egen portfolio hjemmeside, da jeg skulle til at
                             finde en praktikplads som...</p>
-                        <a href="#" className="read__more"><small>Læs mere</small></a>
+                        <NavLink to="/blogs" className="read__more"><small>Læs mere</small></NavLink>
                     </div>
                 </div>
 
@@ -57,10 +57,12 @@ function BlogCards() {
                     </div>
                     <div className="blogcards__content">
                         <h5>d. 17. jan. 2023</h5>
-                        <a href="#" className="blogcards__title">Dyk ned i vores Fitness-Web Rapport</a>
-                        <p>Vi har valgt at lave dette produkt, fordi vi synes at det dækker over FN’s verdensmål
-                            “Sundhed og trivsel” i det...</p>
-                        <a href="#" className="read__more"><small>Læs mere</small></a>
+                        <NavLink to="/blogs" className="blogcards__title">Dyk ned i vores Fitness-Web Rapport</NavLink>
+                        <p>Vi har valgt at lave dette produkt, fordi vi synes at det dækker over FN’s verdensmål..
+                            (kommer snart...)</p>
+                        {/*<p>Vi har valgt at lave dette produkt, fordi vi synes at det dækker over FN’s verdensmål*/}
+                        {/*    “Sundhed og trivsel” i det...</p>*/}
+                        <NavLink to="/blogs" className="read__more"><small>Læs mere</small></NavLink>
                     </div>
                 </div>
 
@@ -75,9 +77,10 @@ function BlogCards() {
                     </div>
                     <div className="blogcards__content">
                         <h5>d. 17. jan. 2023</h5>
-                        <a href="#" className="blogcards__title">Læs vores Cupcake Webshop Rapport</a>
-                        <p>Projektet handler om at kode en simpel dansk webshop til firmaet Olsker Cupcakes ApS, hvor kunderne kan...</p>
-                        <a href="#" className="read__more"><small>Læs mere</small></a>
+                        <NavLink to="/blogs" className="blogcards__title">Læs vores Cupcake Webshop Rapport</NavLink>
+                        <p>Projektet handler om at kode en simpel dansk webshop til firmaet Olsker Cupcakes ApS.. (kommer snart...)</p>
+                        {/*<p>Projektet handler om at kode en simpel dansk webshop til firmaet Olsker Cupcakes ApS, hvor kunderne kan...</p>*/}
+                        <NavLink to="/blogs" className="read__more"><small>Læs mere</small></NavLink>
                     </div>
                 </div>
 

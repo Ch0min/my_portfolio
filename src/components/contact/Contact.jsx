@@ -118,7 +118,6 @@ function Contact() {
                             </div>
 
                             <div className="contact__form-input-box">
-                                {/*<input type="submit" value="Send" className="btn btn-primary"/>*/}
                                 <button type="submit" className="btn btn-primary">Send</button>
                             </div>
                         </form>

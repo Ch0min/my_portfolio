@@ -574,7 +574,6 @@
 
 
 /* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
-
 @media screen and (max-width: 896px){
     .about__me-frame::before {
         display: none;

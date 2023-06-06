@@ -13,9 +13,6 @@ function Nav() {
         window.location.hash = '#';
     }, []);
 
-    // const handleClick = () => {
-    //     setActiveNav(!activeNav)
-    // }
 
     return (
         <nav className="nav__mobile">
@@ -36,30 +33,6 @@ function Nav() {
                                              className={activeNav === "#contact" ? "active" : ""}><BsChatText/></a></li>
                 <div id="nav__ender"></div>
             </ul>
-
-
-            {/*<a href="#" onClick={() => setActiveNav("#")}*/}
-            {/*   className={activeNav === "#" ? "active" : ""}>*/}
-            {/*    <AiOutlineHome /></a>*/}
-            {/*<a href="#about" onClick={() => setActiveNav("#about")}*/}
-            {/*   className={activeNav === "#about" ? "active" : ""}>*/}
-            {/*    <BsFilePerson /></a>*/}
-            {/*<a href="#experience" onClick={() => setActiveNav("#experience")}*/}
-            {/*   className={activeNav === "#experience" ? "active" : ""}>*/}
-            {/*    <BiBook /></a>*/}
-            {/*<a href="#skills" onClick={() => setActiveNav("#skills")}*/}
-            {/*   className={activeNav === "#skills" ? "active" : ""}>*/}
-            {/*    <RiContactsLine /></a>*/}
-            {/*<a href="#projects" onClick={() => setActiveNav("#projects")}*/}
-            {/*   className={activeNav === "#projects" ? "active" : ""}>*/}
-            {/*    <AiOutlineFundProjectionScreen /></a>*/}
-            {/*<a href="#contact" onClick={() => setActiveNav("#contact")}*/}
-            {/*   className={activeNav === "#contact" ? "active" : ""}>*/}
-            {/*    <BiMessageDetail />*/}
-            {/*</a>*/}
-
-            {/*{window.innerWidth <= 600 ? "Test" : "Contact"}*/}
-
         </nav>
 
     );

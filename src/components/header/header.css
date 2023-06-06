@@ -1,6 +1,5 @@
 header {
     height: 34vh;
-    /*height: 30vh;*/
     padding-top: 7rem;
 }
 
@@ -231,11 +230,9 @@ header {
 
 @media screen and (max-width: 896px){
     header {
-        /*height: 46vh;*/
         height: 34vh;
     }
 }
-
 
 /* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 668px){

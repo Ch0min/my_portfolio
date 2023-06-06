@@ -77,7 +77,6 @@
     }
 
     .nav__mobile {
-        /*display: block;*/
         display: flex;
     }
 }

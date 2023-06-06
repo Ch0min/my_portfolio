@@ -71,18 +71,6 @@ function About() {
                     {/*END OF DETAILS*/}
 
 
-
-                    {/*<div*/}
-                    {/*    className="about__me-image-shuriken"*/}
-                    {/*    onClick={spawnShurikens}*/}
-                    {/*    ref={shurikenRef}*/}
-                    {/*>*/}
-                    {/*    <h1>Shuriken</h1>*/}
-                    {/*</div>*/}
-
-
-
-
                     <div className="about__content">
                         <h2>En lille bitte smule om mig...</h2>
                         <i><h4 className="about__content-header">Hejsa derude, mit navn er Mark Lundgaard og jeg er en Datamatiker studerende, som går på CPHBusiness. <br/>

@@ -135,7 +135,6 @@
     }
 }
 
-
 /* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
     .projects__container .projects__card {
