@@ -1,5 +1,7 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState} from "react";
 import "./about.css"
+
+import TypedAnimation from "../../components/typedanimation/TypedAnimation";
 
 import ME from "../../assets/me1.jpg"
 import VIETNAM from "../../assets/vietnam.png"
@@ -72,8 +74,9 @@ function About() {
 
 
                     <div className="about__content">
+                        <h1><TypedAnimation/></h1>
                         <h2>En lille bitte smule om mig...</h2>
-                        <i><h4 className="about__content-header">Hejsa derude, mit navn er Mark Lundgaard og jeg er en Datamatiker studerende, som går på CPHBusiness. <br/>
+                    <i><h4 className="about__content-header">Hejsa derude, mit navn er Mark Lundgaard og jeg er en Datamatiker studerende, som går på CPHBusiness. <br/>
                             og JEG ELSKER AT UDVIKLE OG DESIGNE KODE!
                         </h4></i>
                         <h5 className="about__content-text">

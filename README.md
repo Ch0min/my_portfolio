@@ -85,7 +85,6 @@ max-width: 600px
 
 
 TODO:
-Figure out where to put Letter Animation
 Hent CV for mere info under Work About, kan man ikk trykke på nogle gange.
 Fix at når man refresher, så flasher Hjem knappen i navbaren før den scroller op, samt når man kligger på navbar link.
 LAV 404 side

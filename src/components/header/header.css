@@ -158,54 +158,8 @@ header {
     top: 5.7rem;
     font-size: 1.5rem;
     color: var(--color-white);
-
     animation: bounceDown 1s linear infinite;
 }
-
-
-/*!* ================= LETTER ONE BY ONE ANIMATION ================= *!*/
-/*.random-animation span {*/
-/*    opacity: 0;*/
-/*}*/
-
-/*@keyframes random-fade-in {*/
-/*    from {*/
-/*        opacity: 0;*/
-/*        transform: translate(-50%, -50%) scale(0);*/
-/*    }*/
-/*    to {*/
-/*        opacity: 1;*/
-/*        transform: translate(-50%, -50%) scale(1);*/
-/*    }*/
-/*}*/
-
-/*.random-animation span {*/
-/*    !*position: relative;*!*/
-/*    animation: random-fade-in .5s ease-in-out forwards;*/
-/*}*/
-
-/*.random-animation span::after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    width: 1px;*/
-/*    height: 0;*/
-/*    background-color: #000;*/
-/*    left: 50%;*/
-/*    top: 100%;*/
-/*    transform-origin: top;*/
-/*    animation: random-appear 0.3s ease-in-out forwards;*/
-/*    animation-delay: 0.5s;*/
-/*}*/
-
-/*@keyframes random-appear {*/
-/*    from {*/
-/*        transform: scaleY(0);*/
-/*    }*/
-/*    to {*/
-/*        transform: scaleY(1);*/
-/*    }*/
-/*}*/
-
 
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
