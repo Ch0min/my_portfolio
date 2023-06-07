@@ -13,6 +13,35 @@ function Nav() {
         window.location.hash = '#';
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const sections = document.querySelectorAll("section");
+            let activeSession = null; //
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    activeSession = section.id;
+                }
+            });
+
+            if (activeSession) {
+                setActiveNav("#" + activeSession);
+            } else if (scrollPosition === 0) {
+                setActiveNav("#");
+            }
+        };
+
+        window.scrollTo(0, 0)
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
 
     return (
         <nav className="nav__mobile">

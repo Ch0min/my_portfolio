@@ -82,6 +82,7 @@ max-width: 600px
 
 
 
+- Arrow mellem Header og About kan ikke klikkes. Fix
 
 
 

@@ -27,7 +27,7 @@ function Header() {
                     <h1 className={`animate-slide-left-slow ${showBorderAnimation ? "border-text-animation" :  ""}`} onTransitionEnd={handleTransitionEnd}>
                         Mark{" "}
                         <div id="header__tooltip">
-                            <span id="header__tooltip__text">Klik for historien bag mit kaldenavn</span>
+                            <span id="header__tooltip__text">Det her er mit kaldenavn</span>
                             <a href="" id="header__chomin">Chomin</a>
                         </div>
                         {" "}Lundgaard

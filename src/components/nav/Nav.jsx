@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react";
 import {NavLink} from "react-router-dom";
-
 import "./nav.css"
 
 import NavMobile from "./NavMobile";
+
+import {AiOutlineArrowUp} from "react-icons/ai"
 
 function Nav() {
     const [activeNav, setActiveNav] = useState("#")
@@ -37,6 +38,13 @@ function Nav() {
         };
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
 
     return (
         <div>
@@ -46,8 +54,8 @@ function Nav() {
                     <div id="nav__ender"></div>
                 </ul>
                 <ul>
-                    <li className="nav__link"><a href="#" onClick={() => setActiveNav("#")}
-                           className={activeNav === "#" || activeNav === "#blogcards" ? "active" : ""}>Hjem</a></li>
+                    {/*<li className="nav__link"><a href="#" onClick={() => setActiveNav("#")}*/}
+                    {/*       className={activeNav === "#" || activeNav === "#blogcards" ? "active" : ""}>Hjem</a></li>*/}
                     <li className="nav__link"><a href="#about" onClick={() => setActiveNav("#about")}
                            className={activeNav === "#about" ? "active" : ""}>Om mig</a></li>
                     <li className="nav__link"><a href="#experience" onClick={() => setActiveNav("#experience")}
@@ -60,6 +68,11 @@ function Nav() {
                 </ul>
             </nav>
             <NavMobile/>
+            {activeNav !== null && (
+                <div className="nav__top-button" onClick={scrollToTop}>
+                    <AiOutlineArrowUp/>
+                </div>
+            )}
         </div>
 
     );

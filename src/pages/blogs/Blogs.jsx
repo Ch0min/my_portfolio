@@ -1,7 +1,9 @@
 import React, {useEffect} from "react";
+import {useNavigate} from "react-router-dom";
 
 import "./blogs.css";
 
+import NavBlogs from "../../components/navblogs/NavBlogs";
 import ProgressBar from "../../components/progressbar/ProgressBar";
 import Footer from "../../components/footer/Footer";
 
@@ -11,16 +13,23 @@ import FITNESS from "../../assets/fitness.png"
 import CUPCAKE from "../../assets/cupcake.png"
 
 function Blogs() {
+    const navigate = useNavigate()
 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
 
+    const handleNavClick = () => {
+        navigate("/")
+    }
 
     return (
         <section id="blogs">
             <h5>Tag et læs</h5>
             <h2>Mine Blogs</h2>
+
+            <NavBlogs onClick={handleNavClick} />
+
 
             <div className="container about__container">
 
