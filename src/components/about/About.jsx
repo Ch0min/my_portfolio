@@ -76,7 +76,7 @@ function About() {
                     <div className="about__content">
                         <h1><TypedAnimation/></h1>
                         <h2>En lille bitte smule om mig...</h2>
-                    <i><h4 className="about__content-header">Hejsa derude, mit navn er Mark Lundgaard og jeg er en Datamatiker studerende, som går på CPHBusiness. <br/>
+                    <i><h4 className="about__content-header">Hejsa derude, mit navn er Mark Lundgaard og jeg er en Datamatiker studerende, som går på CPHBusiness, <br/>
                             og JEG ELSKER AT UDVIKLE OG DESIGNE KODE!
                         </h4></i>
                         <h5 className="about__content-text">
@@ -84,7 +84,7 @@ function About() {
                             Man kan roligt sige at der, hvor jeg har lagt en del timer samt blod, sved og tårer, er i mit Portfolio hobby projekt,
                             hvilket har givet mig endnu mere ny viden og læring til bagagen, indenfor HTML/CSS og React JS.
                             <br/><br/>
-                            Når jeg ikke er limet til min computer, så siger jeg sjældent nej tak til en kold bajer med vennerne, ellers så nyder jeg tiden med familien.
+                            Når jeg ikke er limet fast til min computer, så siger jeg sjældent nej tak til en kold bajer med vennerne, ellers så nyder jeg tiden med familien.
                             <br/>
                             Hvis jeg skulle beskrive mig selv kort, så kender mine nære mig som kreativ, passioneret, udadvendt og nysgerrig af natur med et stort gå på mod til,
                             at lære noget nyt.
@@ -182,7 +182,7 @@ function About() {
                                 <h4>Nogle der sagde øl?</h4>
                                 <small className="text-light"><CiBeerMugFull className="about__hobbies-icon"/>Ville
                                     aldrig
-                                    sige nej til en kold bajer.</small>
+                                    sige nej tak til en kold bajer.</small>
                             </article>
 
                         </div>
