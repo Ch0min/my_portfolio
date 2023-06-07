@@ -68,12 +68,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 1.25rem;
-    left: 5%;
+    bottom: 5.25rem;
+    right: 5%;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-color: #333;
+    background-color: var(--color-primary);
     color: #fff;
     font-size: 24px;
     overflow: hidden;
@@ -224,7 +224,7 @@
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
-        background-color: #333;
+        background-color: var(--color-primary);
         color: #fff;
         font-size: 24px;
         overflow: hidden;

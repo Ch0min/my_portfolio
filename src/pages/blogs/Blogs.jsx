@@ -25,8 +25,8 @@ function Blogs() {
 
     return (
         <div id="blogs">
-            <h5>Tag et læs</h5>
-            <h2>MINE BLOGS</h2>
+            <h5 className="blogs__h5">Tag et læs</h5>
+            <h2 className="blogs__h2">MINE BLOGS</h2>
 
             <NavBlogs onClick={handleNavClick} />
 
@@ -74,6 +74,7 @@ function Blogs() {
                                             så derefter kunne tilføje og implementere til mit projekt, hvis det passede
                                             ind.</p>
                                         <br/>
+                                        <br/>
 
                                         <h5>Jeg vil dermed gerne hive jer delvist med ind i min thought-process i gennem
                                             mit portfolio projekt.</h5>
@@ -88,6 +89,7 @@ function Blogs() {
                                             ville jeg gerne gøre den mere interaktiv og sjov, da det er klart federe end
                                             en statisk hjemmeside.
                                             <br/>Derefter gik jeg til værks!</p>
+                                        <br/>
                                         <br/>
 
                                         <h5>
@@ -112,6 +114,7 @@ function Blogs() {
                                                 stabilt overblik over mine komponenter og filer helt fra start af.</p>
                                             </li>
                                         </ul>
+                                        <br/>
                                         <br/>
                                         <h5>Under hele mit workflow valgte jeg, at droppe et Kanban board, da det var et
                                             personligt solo projekt.

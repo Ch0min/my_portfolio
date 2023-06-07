@@ -4,14 +4,14 @@
     clear: both;
 }
 
-#blogs h5 {
+#blogs .blogs__h5 {
     margin-top: 1.5rem;
     text-align: center;
     font-size: 1.1rem;
     color: var(--color-light);
 }
 
-#blogs h2 {
+#blogs .blogs__h2 {
     margin-bottom: 1.5rem;
     text-align: center;
     font-size: 2rem;
@@ -125,6 +125,8 @@ label {
 }
 
 .blogs__card-left-content-expand h5 {
+    text-align: center;
+    font-size: 1.2rem;
     color: var(--color-primary);
 }
 
