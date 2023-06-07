@@ -15,8 +15,7 @@ så derefter kunne tilføje og implementere til mit projekt, hvis det passede in
 Jeg vil dermed gerne hive jer delvist med ind i min thought-process i gennem mit portfolio projekt.
 
 For det første startede jeg ud med, at tænke "hvad skal en portfolio
-hjemmeside indeholde for en studerende som mig?".
-Jeg prøvede at rekognoscere end masse forskellige portfolio hjemmesider fra andre
+hjemmeside indeholde for en studerende som mig?". Jeg prøvede at rekognoscere end masse forskellige portfolio hjemmesider fra andre
 personer, samt kigge på en håndfuld guides
 på youtube eller andre diverse medier. Dette gav mig en bred forståelse for,
 hvilke features og komponenter der
