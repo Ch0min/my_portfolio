@@ -92,7 +92,7 @@ function Blogs() {
                                             personer, samt kigge på en håndfuld guides
                                             på youtube eller andre diverse medier. Dette gav mig en bred forståelse for,
                                             hvilke features og komponenter der
-                                            ville være fede at implementere i min egen portfolio hjemmeside herunder
+                                            ville være fede at implementere i min egen portfolio hjemmeside, herunder
                                             ville jeg gerne gøre den mere interaktiv og sjov.
                                             <br/>Derefter gik jeg til værks!</p>
                                         <br/>
