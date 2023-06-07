@@ -14,10 +14,14 @@ så derefter kunne tilføje og implementere til mit projekt, hvis det passede in
 
 Jeg vil dermed gerne hive jer delvist med ind i min thought-process i gennem mit portfolio projekt.
 
-For det første startede jeg ud med, at tænke "hvad skal en portfolio hjemmeside indeholde for en studerende som mig?".
-Jeg prøvet rekognoscere end masse forskellige portfolio hjemmeside fra andre personer, samt kigge på en håndfuld guides
-på youtube eller andre diverse medier. Dette gav mig en bred forståelse for, hvilke features og komponenter der
-ville være fede at implementere i min egen portfolio hjemmeside herunder ville jeg gerne gøre den mere interaktiv og sjov, da det er klart federe end en statisk hjemmeside.
+For det første startede jeg ud med, at tænke "hvad skal en portfolio
+hjemmeside indeholde for en studerende som mig?".
+Jeg prøvet rekognoscere end masse forskellige portfolio hjemmeside fra andre
+personer, samt kigge på en håndfuld guides
+på youtube eller andre diverse medier. Dette gav mig en bred forståelse for,
+hvilke features og komponenter der
+ville være fede at implementere i min egen portfolio hjemmeside herunder
+ville jeg gerne gøre den mere interaktiv og sjov.
 Derefter gik jeg til værks!
 
 
