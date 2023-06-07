@@ -118,6 +118,11 @@ label {
     margin-top: 0.75rem;
     padding: 0.2rem 0.75rem;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+label:hover {
+    color: var(--color-white);
 }
 
 .blogs__card-left-content-expand {

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
 import "./blogs.css";
@@ -12,11 +12,18 @@ import PORTFOLIO2 from "../../assets/portfoliowebsite2.png"
 import FITNESS from "../../assets/fitness.png"
 import CUPCAKE from "../../assets/cupcake.png"
 
+
 function Blogs() {
+    const [showAnimation, setShowAnimation] = useState(false)
+
     const navigate = useNavigate()
 
     useEffect(() => {
         window.scrollTo(0, 0)
+    }, []);
+
+    useEffect(() => {
+        setShowAnimation(true)
     }, []);
 
     const handleNavClick = () => {
@@ -33,12 +40,12 @@ function Blogs() {
 
             <div className="container about__container">
 
-                <div className="blogs__row">
+                <div className={`blogs__row ${showAnimation ? "show" : ""}`}>
 
 
                     {/*LEFT COLUMN*/}
                     <div className="blogs__left-col">
-                        <div className="blogs__card-left">
+                        <div className="blogs__card-left animate-slide-left">
 
                             <img src={PORTFOLIO2} alt="Min portfolio hjemmeside Project"/>
 
@@ -222,9 +229,9 @@ function Blogs() {
                                         </ul>
                                         <br/>
                                     </p>
-                                    <label htmlFor="ch">Vis mindre</label>
+                                    <label htmlFor="ch"><span>Vis mindre</span></label>
                                 </div>
-                                <label htmlFor="ch">Læs mere</label>
+                                <label htmlFor="ch"><span>Læs mere</span></label>
                             </div>
                         </div>
                     </div>
@@ -232,7 +239,7 @@ function Blogs() {
 
                     {/*RIGHT COLUMN*/}
                     <div className="blogs__right-col">
-                        <div className="blogs__card-transparent">
+                        <div className="blogs__card-transparent animate-slide-right">
                             <h3>Kommende Blogs / Projekter</h3>
                             <ul>
                                 <li>
@@ -247,11 +254,11 @@ function Blogs() {
                                         til efteråret 2023.</p>
                                 </li>
                                 <li>
-                                    <a href=""><span>Python Eksamens Web-Scraping / AI Projekt</span></a>
+                                    <a href=""><span>Python Eksamen Projekt</span></a>
                                     <p href="">En rapport af vores arbejdsproces.</p>
                                 </li>
                                 <li>
-                                    <a href=""><span>Udvikling af et Kollegiums hjemmeside</span></a>
+                                    <a href=""><span>Kollegiehjemmeside Udvikling</span></a>
                                     <p href="">Jeg har budt mig på, at udvikle et kollegiums hjemmeside.</p>
                                 </li>
                             </ul>
@@ -263,13 +270,13 @@ function Blogs() {
 
 
             {/*BOTTOM COLUMN*/}
-            <div className="blogs__card-bottom-container">
-                <div className="blogs__side-text">
+                <div className={`blogs__card-bottom-container ${showAnimation ? "show" : ""}`}>
+                <div className="blogs__side-text animate-slide-up-mid">
                     <div className="blogs__vertical-text">
                         Mine ældste blogs
                     </div>
                 </div>
-                <div className="blogs__card-bottom">
+                <div className="blogs__card-bottom animate-slide-left-slow">
                     <div className="blogs__card-bottom-img">
                         <img src={PORTFOLIO1} alt="Portfolio Projekt Blog"/>
                     </div>
@@ -280,7 +287,7 @@ function Blogs() {
                     </div>
                 </div>
 
-                <div className="blogs__card-bottom">
+                <div className="blogs__card-bottom animate-slide-left-med">
                     <div className="blogs__card-bottom-img">
                         <img src={FITNESS} alt="Fitness Rapport Projekt"/>
                     </div>
@@ -292,7 +299,7 @@ function Blogs() {
                 </div>
 
 
-                <div className="blogs__card-bottom">
+                <div className="blogs__card-bottom animate-slide-left">
                     <div className="blogs__card-bottom-img">
                         <img src={CUPCAKE} alt=""/>
                     </div>
