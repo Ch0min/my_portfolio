@@ -1,4 +1,6 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
+
 import "./footer.css"
 import {BsFacebook, BsGithub, BsInstagram, BsLinkedin} from "react-icons/bs";
 
@@ -22,12 +24,11 @@ function Footer() {
                 <li><a href="https://www.instagram.com/markchomin/" target="_blank"><BsInstagram/></a></li>
             </ul>
             <ul className="footer__menu-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Om mig</a></li>
-                <li><a href="#">Erfaringer</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projekter</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><NavLink to="/blogs">Blog</NavLink></li>
+                <li><a href="#about">Om mig</a></li>
+                <li><a href="#experience">Erfaring</a></li>
+                <li><a href="#projects">Projekter</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
             <p>&copy;2023 Chomin. All rights reserved.</p>
         </footer>
