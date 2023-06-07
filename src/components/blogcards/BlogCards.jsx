@@ -56,7 +56,7 @@ function BlogCards() {
                         <img src={FITNESS} alt="Blog image"/>
                     </div>
                     <div className="blogcards__content">
-                        <h5>d. 17. jan. 2023</h5>
+                        <h5>d. 22. dec. 2022</h5>
                         <NavLink to="/blogs" className="blogcards__title">Dyk ned i vores Fitness-Web Rapport</NavLink>
                         <p>Vi har valgt at lave dette produkt, fordi vi synes at det dækker over FN’s verdensmål..
                             (kommer snart...)</p>
@@ -76,7 +76,7 @@ function BlogCards() {
                         <img src={CUPCAKE} alt="Blog image"/>
                     </div>
                     <div className="blogcards__content">
-                        <h5>d. 17. jan. 2023</h5>
+                        <h5>d. 22. apr. 2022</h5>
                         <NavLink to="/blogs" className="blogcards__title">Læs vores Cupcake Webshop Rapport</NavLink>
                         <p>Projektet handler om at kode en simpel dansk webshop til firmaet Olsker Cupcakes ApS.. (kommer snart...)</p>
                         {/*<p>Projektet handler om at kode en simpel dansk webshop til firmaet Olsker Cupcakes ApS, hvor kunderne kan...</p>*/}

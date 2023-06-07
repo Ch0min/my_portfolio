@@ -54,7 +54,7 @@ function Blogs() {
 
                                 <h6>Nyeste opslag</h6>
                                 <h2><span>Mit Portfolio Projekt</span></h2>
-                                <h4>opslået d. 7. dec. 2023</h4>
+                                <h4>opslået d. 25. maj. 2023</h4>
                                 <p>Jeg begyndte med, at udvikle min egen responsive portfolio hjemmeside, da jeg skulle til at
                                     finde en praktikplads som Datamatiker.
                                     Grunden til dette var, at jeg gerne ville prøve kræfter med den viden jeg har lært
