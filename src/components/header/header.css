@@ -180,6 +180,9 @@ header {
     header {
         height: 34vh;
     }
+    .header__socials {
+        top: 7rem;
+    }
 }
 
 @media screen and (max-width: 896px){
