@@ -103,7 +103,7 @@ function Contact() {
                                        onChange={handleEmailChange}
                                        className={emailError ? "invalid" : ""}/>
                                 <span>Email*</span>
-                                {emailError && <p style={{color: "red", fontSize: "0.8rem"}}>Udfyld venligst en email korrekt</p>}
+                                {emailError && <p style={{color: "red", fontSize: "0.8rem"}}>Udfyld venligst din email korrekt</p>}
 
                             </div>
 
