@@ -45,7 +45,7 @@ function Projects() {
                     </div>
                     <div className="projects__card-content">
                         <h2>Web-scraping / AI Projekt</h2>
-                        <p>Vi har lavet et projekt, hvor vi har web-scrapet spil-data fra 2022 samt udviklet simple machine-learning algoritmer.</p>
+                        <p>Vi har lavet et projekt, hvor vi har web-scrapet spil-data fra 2022, samt udviklet simple machine-learning algoritmer.</p>
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/python_exam" target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
@@ -73,7 +73,7 @@ function Projects() {
                     </div>
                     <div className="projects__card-content">
                         <h2>Fitness Full-Stack Projekt</h2>
-                        <p>Dette var mit 3.Semester Projekt med min studiegruppe, hvor man kan tilmelde sig
+                        <p>Dette var mit 3. Semester Projekt med min studiegruppe, hvor man kan tilmelde sig
                             træningshold.</p>
                         <div className="projects__card-links">
                             <a href="https://github.com/Christoffer-Nielsen-Cph/3sem_exam_backend"
@@ -91,7 +91,7 @@ function Projects() {
                     </div>
                     <div className="projects__card-content">
                         <h2>Carport Full-Stack Projekt</h2>
-                        <p>Carport 2.Sem Eksamensprojekt - ud fra bestemte målinger kan man få tegnet og bestilt en
+                        <p>Carport 2. Semester Eksamensprojekt, ud fra bestemte målinger kan man få tegnet og bestilt en
                             Carport.</p>
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/carport" target="_blank"><BsGithub/></a>
@@ -106,7 +106,7 @@ function Projects() {
                     </div>
                     <div className="projects__card-content">
                         <h2>Cupcake Full-Stack Projekt</h2>
-                        <p>Det her projekt er udviklet i 2.Semester i Java samt Servlets.</p>
+                        <p>Det her projekt er udviklet i 2. Semester i Java samt Servlets.</p>
                         <div className="projects__card-links">
                             <a href="https://github.com/Ch0min/cupcake" target="_blank"><BsGithub/></a>
                             <h5>Github</h5>
