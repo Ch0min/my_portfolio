@@ -24,9 +24,9 @@ function Blogs() {
     }
 
     return (
-        <section id="blogs">
+        <div id="blogs">
             <h5>Tag et læs</h5>
-            <h2>Mine Blogs</h2>
+            <h2>MINE BLOGS</h2>
 
             <NavBlogs onClick={handleNavClick} />
 
@@ -302,7 +302,7 @@ function Blogs() {
             </div>
             <ProgressBar/>
             <Footer/>
-        </section>
+        </div>
     );
 }
 
