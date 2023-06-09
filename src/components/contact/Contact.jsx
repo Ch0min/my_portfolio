@@ -8,6 +8,7 @@ import {RiMessengerLine} from "react-icons/ri"
 import emailjs, {send} from "emailjs-com"
 
 function Contact() {
+    const [hasSent, setHasSent] = useState(false)
     const [emailError, setEmailError] = useState(false)
 
     const form = useRef();
@@ -21,6 +22,7 @@ function Contact() {
         ).then((result) => {
             console.log("Email sent successfully")
             e.target.reset()
+            setHasSent(true)
         }).catch((error) => {
             console.error("Error sending email:", error)
         })
@@ -29,9 +31,7 @@ function Contact() {
     const handleEmailChange = (e) => {
         const inputEmail = e.target.value
         setEmailError(!inputEmail.match(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/));
-
     }
-
 
     return (
         <section id="contact">
@@ -86,7 +86,6 @@ function Contact() {
                     </div>
                     {/*END OF INFO*/}
 
-
                     <div className="contact__form">
                         <form ref={form} onSubmit={sendEmail}>
                             <h2>Læg en besked</h2>
@@ -95,22 +94,19 @@ function Contact() {
                                 <input type="text" name="name" required/>
                                 <span>Navn*</span>
                             </div>
-
                             <div className="contact__form-input-box">
-                                <input type="email" n
-                                       ame="email"
+                                <input type="email" name="email"
                                        required
                                        onChange={handleEmailChange}
                                        className={emailError ? "invalid" : ""}/>
                                 <span>Email*</span>
                                 {emailError && <p style={{color: "red", fontSize: "0.8rem"}}>Udfyld venligst din email korrekt</p>}
-
                             </div>
-
                             <div className="contact__form-input-box">
                                 <input type="text" name="subject" required/>
                                 <span>Emne*</span>
                             </div>
+
 
                             <div className="contact__form-input-box">
                                 <textarea name="message" rows="10" required></textarea>
@@ -118,7 +114,12 @@ function Contact() {
                             </div>
 
                             <div className="contact__form-input-box">
-                                <button type="submit" className="btn btn-primary">Send</button>
+                                <button type="submit" className={`btn btn-primary ${hasSent ? "clicked" : ""}`}>Send</button>
+                                {hasSent && (
+                                    <p className="contact__form-input-confirmation">
+                                        Tak for din besked, den er hermed sendt. Jeg vender tilbage hurtigst muligt!
+                                    </p>
+                                )}
                             </div>
                         </form>
                     </div>

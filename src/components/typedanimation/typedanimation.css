@@ -1,0 +1,18 @@
+.blinking__line {
+    font-weight: 300;
+    color: var(--color-white);
+    opacity: 1;
+    animation: blinkingAnim 1.5s ease-in-out infinite;
+}
+
+@keyframes blinkingAnim {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

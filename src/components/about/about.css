@@ -181,31 +181,6 @@
 }
 
 
-
-.shuriken {
-    position: absolute;
-    width: 7rem;
-    height: 7rem;
-    background: transparent url(../../assets/shuriken.png) no-repeat;
-    background-size: contain;
-    animation: spawnAnimation 1s linear;
-    pointer-events: none;
-
-
-}
-
-@keyframes spawnAnimation {
-    0% {
-        transform: translate(-50%, -50%) scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1;
-    }
-}
-
-
 /* ================= ABOUT DETAILS ================= */
 .about__details {
     grid-column: 1; /* Place the new div in the first column */

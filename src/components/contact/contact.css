@@ -191,6 +191,13 @@
     transition: 0.5s;
 }
 
+.contact__options .contact__form .contact__form-input-box .contact__form-input-confirmation {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
 .contact__options .contact__form .contact__form-input-box button:hover {
     letter-spacing: 0.2rem;
 }

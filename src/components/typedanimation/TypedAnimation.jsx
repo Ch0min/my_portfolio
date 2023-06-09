@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
+import "./typedanimation.css"
 
 function TypedAnimation() {
     const [currentWordIndex, setCurrentWordIndex] = useState(0)
     const [currentCharIndex, setCurrentCharIndex] = useState(0)
     const [typedText, setTypedText] = useState("")
-    const words = ["Chomin", "Datamatiker", "Beerpong Konge", "Deltids Bowler", "Armwrestler i byen"]
+    const words = ["Chomin", "Datamatiker", "Beerpong Konge", "Deltids Bowler", "Armwrestler i byen", "Selvlært Pianist"]
 
     useEffect(() => {
         const typingTimer = setTimeout(() => {
